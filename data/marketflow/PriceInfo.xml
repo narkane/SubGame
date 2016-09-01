@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<class>
+	<Res id="Food">10</Res>
+	<Res id="Water">15</Res>
+	<Res id="Energy">75</Res>
+	<Res id="Metal">55</Res>
+	<Res id="Oil">35</Res>
+	<Res id="Fuel">15</Res>
+	<Res id="Parts">120</Res>
+	<Res id="Lux">200</Res>
+	<Res id="OldLux">500</Res>
+</class>

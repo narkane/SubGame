@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<class>
+
+	<City id="Old Town" x="3700" y="1650" cred="10000">
+	
+		<cRes id="Food">100</cRes>
+		<cRes id="Water">100</cRes>
+		<cRes id="Energy">75</cRes>
+		<cRes id="Metal">40</cRes>
+		<cRes id="Oil">20</cRes>
+		<cRes id="Fuel">80</cRes>
+		<cRes id="Parts">35</cRes>
+		<cRes id="Lux">15</cRes>
+		<cRes id="OldLux">10</cRes>
+		
+		<Generator id="Old Down Town" x="3700" y="1650" product="OldLux" cost="50" out="1" time="100" pop="5" max="10" cred="5000">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Housing id="Luxury Condos" x="3700" y="1650" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		
+	</City>
+	
+	<City id="Black Bottom" x="5650" y="10" cred="10000">
+	
+		<cRes id="Food">80</cRes>
+		<cRes id="Water">80</cRes>
+		<cRes id="Energy">110</cRes>
+		<cRes id="Metal">60</cRes>
+		<cRes id="Oil">90</cRes>
+		<cRes id="Fuel">80</cRes>
+		<cRes id="Parts">60</cRes>
+		<cRes id="Lux">0</cRes>
+		<cRes id="OldLux">0</cRes>
+		
+		<Ship id="Steam Needle" x="5650" y="3000" dock="Black Bottom" cred="100" pop="10" max="20">
+			<sRes id="Food">20</sRes>
+			<sRes id="Water">20</sRes>
+			<sRes id="Energy">0</sRes>
+			<sRes id="Metal">0</sRes>
+			<sRes id="Oil">0</sRes>
+			<sRes id="Fuel">50</sRes>
+			<sRes id="Parts">0</sRes>
+			<sRes id="Lux">0</sRes>
+			<sRes id="OldLux">0</sRes>
+		</Ship>
+		
+		<Generator id="Gusher" x="5650" y="3000" product="Oil" cost="3" out="1" time="10" pop="5" max="10" cred="500">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Generator id="Deep Mines" x="5650" y="3000" product="Metal" cost="5" out="1" time="10" pop="5" max="10" cred="500">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Housing id="Boiler Room" x="5650" y="3000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		
+	</City>
+	
+	<City id="White Shards" x="5600" y="500" cred="10000">
+	
+		<cRes id="Food">50</cRes>
+		<cRes id="Water">150</cRes>
+		<cRes id="Energy">30</cRes>
+		<cRes id="Metal">5</cRes>
+		<cRes id="Oil">5</cRes>
+		<cRes id="Fuel">80</cRes>
+		<cRes id="Parts">5</cRes>
+		<cRes id="Lux">0</cRes>
+		<cRes id="OldLux">0</cRes>
+		
+		<Ship id="Ice Breaker" x="5600" y="500" dock="White Shards" cred="100" pop="10" max="20">
+			<sRes id="Food">20</sRes>
+			<sRes id="Water">20</sRes>
+			<sRes id="Energy">0</sRes>
+			<sRes id="Metal">0</sRes>
+			<sRes id="Oil">0</sRes>
+			<sRes id="Fuel">50</sRes>
+			<sRes id="Parts">0</sRes>
+			<sRes id="Lux">0</sRes>
+			<sRes id="OldLux">0</sRes>
+		</Ship>
+		
+		<Generator id="Iceberg Fields" x="5600" y="500" product="Water" cost="1" out="4" time="10" pop="5" max="10"  cred="500">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Generator id="Crab Farms" x="5600" y="500" product="Food" cost="1" out="1" time="10" pop="5" max="10"  cred="500">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Housing id="Iron Igloos" x="5600" y="500" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		
+	</City>
+	
+	<City id="Flat Sand Farms" x="7600" y="2500" cred="10000">
+	
+		<cRes id="Food">200</cRes>
+		<cRes id="Water">150</cRes>
+		<cRes id="Energy">6</cRes>
+		<cRes id="Metal">2</cRes>
+		<cRes id="Oil">0</cRes>
+		<cRes id="Fuel">80</cRes>
+		<cRes id="Parts">2</cRes>
+		<cRes id="Lux">3</cRes>
+		<cRes id="OldLux">0</cRes>
+		
+		<Ship id="Farm Buggy" x="7600" y="2500" dock="Flat Sand Farms" cred="100" pop="10" max="20">
+			<sRes id="Food">20</sRes>
+			<sRes id="Water">20</sRes>
+			<sRes id="Energy">0</sRes>
+			<sRes id="Metal">0</sRes>
+			<sRes id="Oil">0</sRes>
+			<sRes id="Fuel">50</sRes>
+			<sRes id="Parts">0</sRes>
+			<sRes id="Lux">0</sRes>
+			<sRes id="OldLux">0</sRes>
+		</Ship>
+		
+		<Generator id="Kelp Fields" x="7600" y="2500" product="Food" cost="1" out="3" time="10" pop="5" max="10"  cred="100">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Generator id="Sundown Fishery" x="7600" y="2500" product="Food" cost="1" out="2" time="10" pop="5" max="10"  cred="100">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Housing id="Grand Shire" x="7600" y="2500" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		
+	</City>
+	
+	<City id="Palamine" x="13500" y="4000" cred="10000">
+	
+		<cRes id="Food">130</cRes>
+		<cRes id="Water">100</cRes>
+		<cRes id="Energy">35</cRes>
+		<cRes id="Metal">2</cRes>
+		<cRes id="Oil">3</cRes>
+		<cRes id="Fuel">80</cRes>
+		<cRes id="Parts">10</cRes>
+		<cRes id="Lux">50</cRes>
+		<cRes id="OldLux">3</cRes>
+		
+		<Ship id="Iron Pearl" x="13500" y="4000" dock="Palamine" cred="100" pop="10" max="20">
+			<sRes id="Food">20</sRes>
+			<sRes id="Water">20</sRes>
+			<sRes id="Energy">0</sRes>
+			<sRes id="Metal">0</sRes>
+			<sRes id="Oil">0</sRes>
+			<sRes id="Fuel">50</sRes>
+			<sRes id="Parts">0</sRes>
+			<sRes id="Lux">0</sRes>
+			<sRes id="OldLux">0</sRes>
+		</Ship>
+		
+		<Generator id="The Reef" x="13500" y="4000" product="Lux" cost="20" out="1" time="10" pop="5" max="10"  cred="500">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Generator id="Nursery" x="13500" y="4000" product="Food" cost="2" out="2" time="10" pop="5" max="10"  cred="500">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Housing id="Shell Cove" x="13500" y="4000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		
+	</City>
+	
+	<City id="Junk Town" x="10000" y="3000" cred="10000">
+	
+		<cRes id="Food">250</cRes>
+		<cRes id="Water">250</cRes>
+		<cRes id="Energy">40</cRes>
+		<cRes id="Metal">75</cRes>
+		<cRes id="Oil">25</cRes>
+		<cRes id="Fuel">80</cRes>
+		<cRes id="Parts">60</cRes>
+		<cRes id="Lux">3</cRes>
+		<cRes id="OldLux">2</cRes>
+		
+		<Ship id="Red Ballast" x="10000" y="3000" dock="Junk Town" cred="100" pop="10" max="20">
+			<sRes id="Food">20</sRes>
+			<sRes id="Water">20</sRes>
+			<sRes id="Energy">0</sRes>
+			<sRes id="Metal">0</sRes>
+			<sRes id="Oil">0</sRes>
+			<sRes id="Fuel">50</sRes>
+			<sRes id="Parts">0</sRes>
+			<sRes id="Lux">0</sRes>
+			<sRes id="OldLux">0</sRes>
+		</Ship>
+		
+		<Ship id="HMS Dellinger" x="10000" y="3000" dock="Junk Town" cred="100" pop="10" max="20">
+			<sRes id="Food">20</sRes>
+			<sRes id="Water">20</sRes>
+			<sRes id="Energy">0</sRes>
+			<sRes id="Metal">0</sRes>
+			<sRes id="Oil">0</sRes>
+			<sRes id="Fuel">50</sRes>
+			<sRes id="Parts">0</sRes>
+			<sRes id="Lux">0</sRes>
+			<sRes id="OldLux">0</sRes>
+		</Ship>
+		
+		<Ship id="Wave Breaker" x="10000" y="3000" dock="Junk Town" cred="100" pop="10" max="20">
+			<sRes id="Food">20</sRes>
+			<sRes id="Water">20</sRes>
+			<sRes id="Energy">0</sRes>
+			<sRes id="Metal">0</sRes>
+			<sRes id="Oil">0</sRes>
+			<sRes id="Fuel">50</sRes>
+			<sRes id="Parts">0</sRes>
+			<sRes id="Lux">0</sRes>
+			<sRes id="OldLux">0</sRes>
+		</Ship>
+		
+		<Generator id="Scrap Yard" x="10000" y="3000" product="Parts" cost="9" out="1" time="10" pop="5" max="10"  cred="500">
+			<in id="Metal"></in>
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Housing id="Slum Pit" x="10000" y="3000" pop="50" max="100" cred="10">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		<Housing id="Bangerton" x="10000" y="3000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		
+	</City>	
+	
+	<City id="The Expanse" x="10500" y="1500" cred="10000">
+	
+		<cRes id="Food">50</cRes>
+		<cRes id="Water">50</cRes>
+		<cRes id="Energy">140</cRes>
+		<cRes id="Metal">5</cRes>
+		<cRes id="Oil">0</cRes>
+		<cRes id="Fuel">80</cRes>
+		<cRes id="Parts">5</cRes>
+		<cRes id="Lux">0</cRes>
+		<cRes id="OldLux">0</cRes>
+		
+		<Ship id="Fan Ship" x="10500" y="1500" dock="The Expanse" cred="100" pop="10" max="20">
+			<sRes id="Food">20</sRes>
+			<sRes id="Water">20</sRes>
+			<sRes id="Energy">0</sRes>
+			<sRes id="Metal">0</sRes>
+			<sRes id="Oil">0</sRes>
+			<sRes id="Fuel">50</sRes>
+			<sRes id="Parts">0</sRes>
+			<sRes id="Lux">0</sRes>
+			<sRes id="OldLux">0</sRes>
+		</Ship>
+		
+		<Generator id="North Turbines" x="10500" y="1500" product="Energy" cost="1" out="15" time="10" pop="5" max="10"  cred="500">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Generator id="East Turbines" x="10500" y="1500" product="Energy" cost="1" out="15" time="10" pop="5" max="10"  cred="500">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Housing id="Wind Tent" x="10500" y="1500" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		
+	</City>
+	
+	<City id="Bastion" x="6700" y="1000" cred="10000">
+	
+		<cRes id="Food">500</cRes>
+		<cRes id="Water">500</cRes>
+		<cRes id="Energy">40</cRes>
+		<cRes id="Metal">10</cRes>
+		<cRes id="Oil">0</cRes>
+		<cRes id="Fuel">80</cRes>
+		<cRes id="Parts">4</cRes>
+		<cRes id="Lux">0</cRes>
+		<cRes id="OldLux">0</cRes>
+		
+		<Housing id="GRP-001" x="6700" y="1000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		<Housing id="GRP-002" x="6700" y="1000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		<Housing id="GRP-003" x="6700" y="1000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		<Housing id="GRP-004" x="6700" y="1000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		<Housing id="GRP-005" x="6700" y="1000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		<Housing id="GRP-006" x="6700" y="1000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		<Housing id="GRP-007" x="16700" y="1000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		<Housing id="GRP-008" x="6700" y="1000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		<Housing id="GRP-009" x="6700" y="1000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		<Housing id="GRP-010" x="6700" y="1000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		<Housing id="GRP-012" x="6700" y="1000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		<Housing id="GRP-013" x="6700" y="1000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		<Housing id="GRP-014" x="6700" y="1000" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		
+	</City>
+
+	<City id="SeaLab 017" x="10" y="10" cred="10000">
+	
+		<cRes id="Food">10</cRes>
+		<cRes id="Water">10</cRes>
+		<cRes id="Energy">10</cRes>
+		<cRes id="Metal">10</cRes>
+		<cRes id="Oil">10</cRes>
+		<cRes id="Fuel">80</cRes>
+		<cRes id="Parts">10</cRes>
+		<cRes id="Lux">10</cRes>
+		<cRes id="OldLux">10</cRes>
+		
+		<Generator id="SF-Lab 03" x="10" y="10" product="Food" cost="0" out="1" time="10" pop="5" max="10"  cred="0">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Generator id="DS-Lab 01" x="10" y="10" product="Water" cost="0" out="1" time="10" pop="5" max="10"  cred="0">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Generator id="FE-Lab 04" x="10" y="10" product="Energy" cost="0" out="1" time="10" pop="5" max="10"  cred="0">
+			<gRes id="Food">0</gRes>
+			<gRes id="Water">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Metal">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Lux">0</gRes>
+			<gRes id="OldLux">0</gRes>
+		</Generator>
+		
+		<Housing id="HCC-Lab 07" x="10" y="10" pop="50" max="100" cred="0">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		
+	</City>
+	
+	<City id="DeepMire" x="1000" y="4500" cred="10000">
+	
+		<cRes id="Food">60</cRes>
+		<cRes id="Water">40</cRes>
+		<cRes id="Energy">40</cRes>
+		<cRes id="Metal">8</cRes>
+		<cRes id="Oil">9</cRes>
+		<cRes id="Fuel">80</cRes>
+		<cRes id="Parts">1</cRes>
+		<cRes id="Lux">0</cRes>
+		<cRes id="OldLux">0</cRes>
+		
+		<Ship id="Pincer" x="1000" y="4500" dock="DeepMire" cred="100" pop="10" max="20">
+			<sRes id="Food">20</sRes>
+			<sRes id="Water">20</sRes>
+			<sRes id="Energy">0</sRes>
+			<sRes id="Metal">0</sRes>
+			<sRes id="Oil">0</sRes>
+			<sRes id="Fuel">50</sRes>
+			<sRes id="Parts">0</sRes>
+			<sRes id="Lux">0</sRes>
+			<sRes id="OldLux">0</sRes>
+		</Ship>
+		
+		<Ship id="Barnacle" x="1000" y="4500" dock="DeepMire" cred="100" pop="10" max="20">
+			<sRes id="Food">20</sRes>
+			<sRes id="Water">20</sRes>
+			<sRes id="Energy">0</sRes>
+			<sRes id="Metal">0</sRes>
+			<sRes id="Oil">0</sRes>
+			<sRes id="Fuel">50</sRes>
+			<sRes id="Parts">0</sRes>
+			<sRes id="Lux">0</sRes>
+			<sRes id="OldLux">0</sRes>
+		</Ship>
+		
+		<Housing id="Vent Side" x="1000" y="4500" pop="50" max="100" cred="100">
+			<hRes id="Food">50</hRes>
+			<hRes id="Water">50</hRes>
+		</Housing>
+		
+	</City>
+</class>

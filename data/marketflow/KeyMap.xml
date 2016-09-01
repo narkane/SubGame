@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<class>
+	<Binding id="37" action="scrollLeft"></Binding>
+	<Binding id="38" action="scrollUp"></Binding>
+	<Binding id="39" action="scrollRight"></Binding>
+	<Binding id="40" action="scrollDown"></Binding>
+
+	<Binding id="49" action="SwitchToUI"></Binding>
+	<Binding id="50" action="SwitchToMF"></Binding>
+	<Binding id="51" action="SwitchToSB"></Binding>
+	<Binding id="52" action="SwitchToME"></Binding>
+	
+	<Binding id="81" action="ViewC01"></Binding>
+	<Binding id="87" action="ViewC02"></Binding>
+	<Binding id="69" action="ViewC03"></Binding>
+	<Binding id="82" action="ViewC04"></Binding>
+	<Binding id="84" action="ViewC05"></Binding>
+	<Binding id="89" action="ViewC06"></Binding>
+	<Binding id="85" action="ViewC07"></Binding>
+	<Binding id="73" action="ViewC08"></Binding>
+	<Binding id="79" action="ViewC09"></Binding>
+	<Binding id="80" action="ViewC10"></Binding>
+</class>
