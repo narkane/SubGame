@@ -98,7 +98,7 @@ public class Generator extends Entity
 		{
 			ttl+=home.Generator(home.generators.get(i)).Resource(Product);
 		}
-		float max = (float)Init.basePrices.get(Product);
+		float max = (float)home.BasePrices().get(Product);
 		float mlt = 0.0f;
 		if(amt>0&&ttl>0){mlt = amt/ttl;}
 		mlt=mlt+1.0f;

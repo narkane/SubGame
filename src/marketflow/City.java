@@ -22,6 +22,7 @@ public class City extends Entity
 	private Map<String, Housing> houseRef;
 	private float houseTax = 0.1f;
 	private Map<String, Integer> prices;
+	private Map<String, Integer> basePrices;
 	
 	public City(String id, int x, int y, Map<String, Ship> sh_ref, Map<String, Generator> g_ref, Map<String, Housing> h_ref, Map<String, Stock> st_ref)
 	{
@@ -32,7 +33,18 @@ public class City extends Entity
 		prices = new HashMap<String, Integer>();
 		img = Game.gfx.load("res/city.png");
 	}
-	
+
+	public void BasePrices(Map<String, Integer> in)
+	{
+		basePrices=in;
+
+	}
+
+	public Map<String, Integer> BasePrices()
+	{
+		return basePrices;
+	}
+
 	public void update(int count, int tickCount)
 	{
 		super.update(count, tickCount);
@@ -41,7 +53,7 @@ public class City extends Entity
 		{//Find appropriate prices.
 			float amt = (float)s.Resource(ID);
 			float ttl = (float)s.Total();
-			float max = (float)Init.basePrices.get(s.Name);
+			float max = (float)basePrices.get(s.Name);
 			float mlt = 0.0f;
 			if(amt>0){mlt = amt/ttl;}
 			mlt=mlt+1.0f;
@@ -62,13 +74,6 @@ public class City extends Entity
 	public void render(Graphics g)
 	{
 		super.render(g);
-		for(Ship s : shipRef.values())
-		{
-			if(s.Allience()==ID)
-			{
-				s.render(g);
-			}
-		}
 	}
 	
 	public Housing leastPopulatedHouse()

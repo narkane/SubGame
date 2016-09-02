@@ -28,8 +28,6 @@ public class Init
 	
 	private int scrollSpeed = 25;
 	
-	public static Map<String, Integer> basePrices;
-	
 	public BufferedImage mapImg;
 	public int mapWidth;
 	public int mapHeight;
@@ -61,8 +59,6 @@ public class Init
 		
 		_houseColl = new HashMap<String, Housing>();
 		_houseResColl = new HashMap<String, Stock>();
-		
-		basePrices = new HashMap<String, Integer>();
 		
 		mapImg = Game.gfx.load("res/map.jpg");
 		mapWidth=mapImg.getWidth();
@@ -108,6 +104,10 @@ public class Init
 		{
 			c.render(g);
 		}
+		for(Ship s : _shipColl.values())
+		{
+			s.render(g);
+		}
 	}
 
 	public void scroll(int x, int y)
@@ -124,7 +124,7 @@ public class Init
 	public void Report()
 	{
 		FileOutputStream out;
-		String reportPath = "C:\\Users\\Riggy\\IdeaProjects\\BlueYak\\data\\marketflow\\reports\\";
+		String reportPath = "C:\\Users\\Riggy\\IdeaProjects\\SubGame\\data\\marketflow\\reports\\";
 		try
 		{
 

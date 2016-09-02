@@ -1,5 +1,6 @@
 package engine;
 import java.io.File;
+import java.util.HashMap;
 import java.util.Map;
 
 import javax.xml.parsers.*;
@@ -71,7 +72,8 @@ public class XMLHandler
 		String gen;
 		String res;
 		String house;
-		
+		Map<String, Integer> basePrices;
+
 		Document doc = read("data/marketflow/ResInfo.xml");
 		NodeList c_nodes = doc.getElementsByTagName("City");
 		for(int i = 0; i < c_nodes.getLength(); i++)
@@ -89,11 +91,14 @@ public class XMLHandler
 					sc,											//Ship Collection
 					gc,											//Generator Collection
 					hc,											//Housing Collection
-					crc											//City Rousource Collection
+					crc											//City Resource Collection
 			));
 			//initializes city credit amount
 			cc.get(city).Credit(Integer.parseInt(c_elem.getAttribute("cred")));
-			
+
+			//gets basePrice map ready to build
+			basePrices = new HashMap<String, Integer>();
+
 			NodeList cr_nodes = c_elem.getElementsByTagName("cRes");
 			for(int j = 0; j < cr_nodes.getLength(); j++)
 			{
@@ -102,11 +107,16 @@ public class XMLHandler
 				
 				//sets city resource product type
 				res = cr_elem.getAttribute("id");
+				basePrices.put(res, Integer.parseInt(cr_elem.getAttribute("base")));
+
 				//initializes city resource stock (if not already)
 				if(crc.get(res)==null){crc.put(res, new Stock(res));}
 				//initializes city's resource stock amount
 				crc.get(res).initStock(city, Integer.parseInt(cr_elem.getTextContent()));
 			}
+
+			//set city base prices
+			cc.get(city).BasePrices(basePrices);
 		//Ships
 			NodeList s_nodes = c_elem.getElementsByTagName("Ship");
 			for(int j = 0; j < s_nodes.getLength(); j++)
@@ -207,22 +217,21 @@ public class XMLHandler
 			}
 		//Housing
 			NodeList h_nodes = c_elem.getElementsByTagName("Housing");
-			for(int j = 0; j < h_nodes.getLength(); j++)
-			{
+			for(int j = 0; j < h_nodes.getLength(); j++) {
 				Node h_node = h_nodes.item(j);
 				Element h_elem = (Element) h_node;
-				
+
 				//sets housing unit name
 				house = h_elem.getAttribute("id");
 
 				//initializes housing unit
-				hc.put(house, new Housing(house,						//Name of House
-						Integer.parseInt(h_elem.getAttribute("x")),		//X Coordinate
-						Integer.parseInt(h_elem.getAttribute("y")),		//Y Coordinate
-						city,											//Name of Home City
-						cc,												//reference to City Collection
-						hrc,											//reference to Housing Resource Stock
-						Integer.parseInt(h_elem.getAttribute("max"))	//Max Population of Dwellers
+				hc.put(house, new Housing(house,                        //Name of House
+						Integer.parseInt(h_elem.getAttribute("x")),        //X Coordinate
+						Integer.parseInt(h_elem.getAttribute("y")),        //Y Coordinate
+						city,                                            //Name of Home City
+						cc,                                                //reference to City Collection
+						hrc,                                            //reference to Housing Resource Stock
+						Integer.parseInt(h_elem.getAttribute("max"))    //Max Population of Dwellers
 				));
 				//initializes housing unit's credit amount
 				hc.get(house).Credit(Integer.parseInt(h_elem.getAttribute("cred")));
@@ -232,37 +241,25 @@ public class XMLHandler
 				cc.get(city).incPopulationMax(Integer.parseInt(h_elem.getAttribute("max")));
 				//adds using unit to respective city's housing list
 				cc.get(city).housing.add(house);
-				
+
 				NodeList hr_nodes = h_elem.getElementsByTagName("hRes");
-				for(int k = 0; k < hr_nodes.getLength(); k++)
-				{
+				for (int k = 0; k < hr_nodes.getLength(); k++) {
 					Node hr_node = hr_nodes.item(k);
 					Element hr_elem = (Element) hr_node;
-					
+
 					//sets housing resource type
 					res = hr_elem.getAttribute("id");
 					//initializes housing resource stock (if not already)
-					if(hrc.get(res)==null){hrc.put(res, new Stock(res));}
+					if (hrc.get(res) == null) {
+						hrc.put(res, new Stock(res));
+					}
 					//initializes housing unit's resource stock amount
 					hrc.get(res).initStock(house, Integer.parseInt(hr_elem.getTextContent()));
 				}
 			}
-			
-			processBasePrices();
 		}
 	}
-	private void processBasePrices()
-	{//This is just stupid.. Stop using static! please!
-		Document doc = read("data/marketflow/PriceInfo.xml");
-		NodeList nodes = doc.getElementsByTagName("Res");
-		for(int i = 0; i < nodes.getLength(); i++)
-		{
-			Node node = nodes.item(i);
-			Element elem = (Element) node;
-			Init.basePrices.put(elem.getAttribute("id"), Integer.parseInt(elem.getTextContent()));
-		}
-	}
-	
+
 	public void processSubBattle()
 	{
 		// TODO Auto-generated method stub
