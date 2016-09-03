@@ -26,9 +26,9 @@ public class Generator extends Entity
 	private City home;
 	private int price;
 	
-	public Generator(String id, int x, int y, int c, int output, String[] inputs, String product, String location, Map<String, City> c_ref, Map<String, Stock> st_ref, int t, int pm)
+	public Generator(String id, String desc, int x, int y, int c, int output, String[] inputs, String product, String location, Map<String, City> c_ref, Map<String, Stock> st_ref, int t, int pm)
 	{
-		super(id, st_ref, x, y);
+		super(id, desc, st_ref, x, y);
 		Location = location;
 		Allience = location;
 		Inputs = inputs;
@@ -91,7 +91,7 @@ public class Generator extends Entity
 	public void update(int count, int tickCount)
 	{
 		super.update(count, tickCount);
-		
+
 		float amt = (float)Resource(Product);
 		float ttl = (float)amt;
 		for(int i = 0; i < home.generators.size(); i++)

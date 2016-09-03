@@ -1,6 +1,6 @@
 package marketflow;
 
-import java.awt.Graphics;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -25,7 +25,7 @@ public class Init
 	
 	private Map<String, Housing> _houseColl;
 	private Map<String, Stock> _houseResColl;
-	
+
 	private int scrollSpeed = 25;
 	
 	public BufferedImage mapImg;
@@ -35,12 +35,12 @@ public class Init
 	public int mapOffsetY;
 	public int mapEdgeX;
 	public int mapEdgeY;
-	
+
 	public static HSSFWorkbook cityBook;
 	public static HSSFWorkbook shipBook;
 	public static HSSFWorkbook housingBook;
 	public static HSSFWorkbook generatorBook;
-	
+
 	public Init(Game i, XMLHandler xmlh)
 	{
 		cityBook = new HSSFWorkbook();

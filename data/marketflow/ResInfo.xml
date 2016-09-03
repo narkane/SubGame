@@ -1,630 +1,745 @@
 <?xml version="1.0"?>
 <class>
 
-	<City id="Old Town" x="3700" y="1650" cred="10000">
-	
-		<cRes id="Food" base="10">100</cRes>
-		<cRes id="Water" base="15">100</cRes>
-		<cRes id="Energy" base="75">0</cRes>
-		<cRes id="Metal" base="55">0</cRes>
-		<cRes id="Oil" base="35">0</cRes>
-		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Parts" base="120">0</cRes>
-		<cRes id="Lux" base="200">0</cRes>
-		<cRes id="OldLux" base="420">1</cRes>
-		
-		<Generator id="Old Down Town" x="3700" y="1650" product="OldLux" cost="50" out="1" time="100" pop="5" max="10" cred="5000">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">1</gRes>
-		</Generator>
-		
-		<Generator id="Can Food Depot" x="3700" y="1650" product="Food" cost="1" out="1" time="10" pop="5" max="10" cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Housing id="Luxury Condos" x="3700" y="1650" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		
-	</City>
-	
-	<City id="Black Bottom" x="5650" y="3000" cred="10000">
-	
-		<cRes id="Food" base="10">100</cRes>
-		<cRes id="Water" base="15">100</cRes>
-		<cRes id="Energy" base="85">0</cRes>
-		<cRes id="Metal" base="40">0</cRes>
-		<cRes id="Oil" base="30">0</cRes>
-		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Parts" base="120">0</cRes>
-		<cRes id="Lux" base="200">0</cRes>
-		<cRes id="OldLux" base="500">0</cRes>
-		
-		<Ship id="Steam Needle" x="5650" y="3000" dock="Black Bottom" cred="100" pop="10" max="20">
-			<sRes id="Food">20</sRes>
-			<sRes id="Water">20</sRes>
-			<sRes id="Energy">0</sRes>
-			<sRes id="Metal">0</sRes>
-			<sRes id="Oil">0</sRes>
-			<sRes id="Fuel">50</sRes>
-			<sRes id="Parts">0</sRes>
-			<sRes id="Lux">0</sRes>
-			<sRes id="OldLux">0</sRes>
-		</Ship>
-		
-		<Generator id="Gusher" x="5650" y="3000" product="Oil" cost="3" out="1" time="10" pop="5" max="10" cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">10</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Generator id="Deep Mines" x="5650" y="3000" product="Metal" cost="5" out="1" time="10" pop="5" max="10" cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Generator id="Jelly Nets" x="3700" y="1650" product="Food" cost="1" out="1" time="10" pop="5" max="10" cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Housing id="Boiler Room" x="5650" y="3000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		
-	</City>
-	
-	<City id="White Shards" x="5600" y="500" cred="10000">
-	
-		<cRes id="Food" base="10">100</cRes>
-		<cRes id="Water" base="10">100</cRes>
-		<cRes id="Energy" base="75">0</cRes>
-		<cRes id="Metal" base="55">0</cRes>
-		<cRes id="Oil" base="35">0</cRes>
-		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Parts" base="120">0</cRes>
-		<cRes id="Lux" base="200">0</cRes>
-		<cRes id="OldLux" base="500">0</cRes>
-		
-		<Ship id="Ice Breaker" x="5600" y="500" dock="White Shards" cred="100" pop="10" max="20">
-			<sRes id="Food">20</sRes>
-			<sRes id="Water">20</sRes>
-			<sRes id="Energy">0</sRes>
-			<sRes id="Metal">0</sRes>
-			<sRes id="Oil">0</sRes>
-			<sRes id="Fuel">50</sRes>
-			<sRes id="Parts">0</sRes>
-			<sRes id="Lux">0</sRes>
-			<sRes id="OldLux">0</sRes>
-		</Ship>
-		
-		<Generator id="Iceberg Fields" x="5600" y="500" product="Water" cost="1" out="3" time="10" pop="5" max="10"  cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Generator id="Crab Farms" x="5600" y="500" product="Food" cost="1" out="1" time="10" pop="5" max="10"  cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Housing id="Iron Igloos" x="5600" y="500" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		
-	</City>
-	
-	<City id="Flat Sand Farms" x="7600" y="2500" cred="10000">
-	
-		<cRes id="Food" base="8">100</cRes>
-		<cRes id="Water" base="15">100</cRes>
-		<cRes id="Energy" base="75">0</cRes>
-		<cRes id="Metal" base="55">0</cRes>
-		<cRes id="Oil" base="35">0</cRes>
-		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Parts" base="120">0</cRes>
-		<cRes id="Lux" base="200">0</cRes>
-		<cRes id="OldLux" base="500">0</cRes>
-		
-		<Ship id="Farm Buggy" x="7600" y="2500" dock="Flat Sand Farms" cred="100" pop="10" max="20">
-			<sRes id="Food">20</sRes>
-			<sRes id="Water">20</sRes>
-			<sRes id="Energy">0</sRes>
-			<sRes id="Metal">0</sRes>
-			<sRes id="Oil">0</sRes>
-			<sRes id="Fuel">50</sRes>
-			<sRes id="Parts">0</sRes>
-			<sRes id="Lux">0</sRes>
-			<sRes id="OldLux">0</sRes>
-		</Ship>
-		
-		<Generator id="Kelp Fields" x="7600" y="2500" product="Food" cost="1" out="3" time="10" pop="5" max="10"  cred="100">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Generator id="Sundown Fishery" x="7600" y="2500" product="Food" cost="1" out="2" time="10" pop="5" max="10"  cred="100">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Generator id="Rain Buckets" x="3700" y="1650" product="Water" cost="1" out="1" time="10" pop="5" max="10" cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Housing id="Grand Shire" x="7600" y="2500" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		
-	</City>
-	
-	<City id="Palamine" x="13500" y="4000" cred="10000">
-	
-		<cRes id="Food" base="10">100</cRes>
-		<cRes id="Water" base="15">100</cRes>
-		<cRes id="Energy" base="75">0</cRes>
-		<cRes id="Metal" base="55">0</cRes>
-		<cRes id="Oil" base="35">0</cRes>
-		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Parts" base="120">0</cRes>
-		<cRes id="Lux" base="180">0</cRes>
-		<cRes id="OldLux" base="500">0</cRes>
-		
-		<Ship id="Iron Pearl" x="13500" y="4000" dock="Palamine" cred="100" pop="10" max="20">
-			<sRes id="Food">20</sRes>
-			<sRes id="Water">20</sRes>
-			<sRes id="Energy">0</sRes>
-			<sRes id="Metal">0</sRes>
-			<sRes id="Oil">0</sRes>
-			<sRes id="Fuel">50</sRes>
-			<sRes id="Parts">0</sRes>
-			<sRes id="Lux">0</sRes>
-			<sRes id="OldLux">0</sRes>
-		</Ship>
-		
-		<Generator id="The Reef" x="13500" y="4000" product="Lux" cost="20" out="1" time="10" pop="5" max="10"  cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Generator id="Nursery" x="13500" y="4000" product="Food" cost="2" out="2" time="10" pop="5" max="10"  cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Generator id="Salt Sponges" x="3700" y="1650" product="Water" cost="1" out="1" time="10" pop="5" max="10" cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Housing id="Shell Cove" x="13500" y="4000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		
-	</City>
-	
-	<City id="Junk Town" x="10000" y="3000" cred="10000">
-	
-		<cRes id="Food" base="10">100</cRes>
-		<cRes id="Water" base="15">100</cRes>
-		<cRes id="Energy" base="75">0</cRes>
-		<cRes id="Metal" base="60">0</cRes>
-		<cRes id="Oil" base="35">0</cRes>
-		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Parts" base="100">0</cRes>
-		<cRes id="Lux" base="200">0</cRes>
-		<cRes id="OldLux" base="500">0</cRes>
-		
-		<Ship id="Red Ballast" x="10000" y="3000" dock="Junk Town" cred="100" pop="10" max="20">
-			<sRes id="Food">20</sRes>
-			<sRes id="Water">20</sRes>
-			<sRes id="Energy">0</sRes>
-			<sRes id="Metal">0</sRes>
-			<sRes id="Oil">0</sRes>
-			<sRes id="Fuel">50</sRes>
-			<sRes id="Parts">0</sRes>
-			<sRes id="Lux">0</sRes>
-			<sRes id="OldLux">0</sRes>
-		</Ship>
-		
-		<Ship id="HMS Dellinger" x="10000" y="3000" dock="Junk Town" cred="100" pop="10" max="20">
-			<sRes id="Food">20</sRes>
-			<sRes id="Water">20</sRes>
-			<sRes id="Energy">0</sRes>
-			<sRes id="Metal">0</sRes>
-			<sRes id="Oil">0</sRes>
-			<sRes id="Fuel">50</sRes>
-			<sRes id="Parts">0</sRes>
-			<sRes id="Lux">0</sRes>
-			<sRes id="OldLux">0</sRes>
-		</Ship>
-		
-		<Ship id="Wave Breaker" x="10000" y="3000" dock="Junk Town" cred="100" pop="10" max="20">
-			<sRes id="Food">20</sRes>
-			<sRes id="Water">20</sRes>
-			<sRes id="Energy">0</sRes>
-			<sRes id="Metal">0</sRes>
-			<sRes id="Oil">0</sRes>
-			<sRes id="Fuel">50</sRes>
-			<sRes id="Parts">0</sRes>
-			<sRes id="Lux">0</sRes>
-			<sRes id="OldLux">0</sRes>
-		</Ship>
-		
-		<Generator id="Scrap Yard" x="10000" y="3000" product="Parts" cost="9" out="1" time="10" pop="5" max="10"  cred="500">
-			<in id="Metal">20</in>
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Generator id="Compost Pile" x="3700" y="1650" product="Food" cost="1" out="1" time="10" pop="5" max="10" cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Housing id="Slum Pit" x="10000" y="3000" pop="50" max="100" cred="10">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		<Housing id="Bangerton" x="10000" y="3000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		
-	</City>	
-	
-	<City id="The Expanse" x="10500" y="1500" cred="10000">
-	
-		<cRes id="Food" base="10">100</cRes>
-		<cRes id="Water" base="15">100</cRes>
-		<cRes id="Energy" base="65">0</cRes>
-		<cRes id="Metal" base="55">0</cRes>
-		<cRes id="Oil" base="35">0</cRes>
-		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Parts" base="120">0</cRes>
-		<cRes id="Lux" base="200">0</cRes>
-		<cRes id="OldLux" base="500">0</cRes>
-		
-		<Ship id="Fan Ship" x="10500" y="1500" dock="The Expanse" cred="100" pop="10" max="20">
-			<sRes id="Food">20</sRes>
-			<sRes id="Water">20</sRes>
-			<sRes id="Energy">0</sRes>
-			<sRes id="Metal">0</sRes>
-			<sRes id="Oil">0</sRes>
-			<sRes id="Fuel">50</sRes>
-			<sRes id="Parts">0</sRes>
-			<sRes id="Lux">0</sRes>
-			<sRes id="OldLux">0</sRes>
-		</Ship>
-		
-		<Generator id="North Turbines" x="10500" y="1500" product="Energy" cost="1" out="1" time="10" pop="5" max="10"  cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Generator id="East Turbines" x="10500" y="1500" product="Energy" cost="1" out="1" time="10" pop="5" max="10"  cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Generator id="Hydroponic Garden" x="3700" y="1650" product="Food" cost="1" out="1" time="10" pop="5" max="10" cred="500">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Housing id="Wind Tent" x="10500" y="1500" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		
-	</City>
-	
-	<City id="Bastion" x="6700" y="1000" cred="10000">
-	
-		<cRes id="Food" base="12">100</cRes>
-		<cRes id="Water" base="18">100</cRes>
-		<cRes id="Energy" base="75">0</cRes>
-		<cRes id="Metal" base="55">0</cRes>
-		<cRes id="Oil" base="35">0</cRes>
-		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Parts" base="120">0</cRes>
-		<cRes id="Lux" base="200">0</cRes>
-		<cRes id="OldLux" base="500">0</cRes>
-		
-		<Housing id="GRP-001" x="6700" y="1000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		<Housing id="GRP-002" x="6700" y="1000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		<Housing id="GRP-003" x="6700" y="1000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		<Housing id="GRP-004" x="6700" y="1000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		<Housing id="GRP-005" x="6700" y="1000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		<Housing id="GRP-006" x="6700" y="1000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		<Housing id="GRP-007" x="16700" y="1000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		<Housing id="GRP-008" x="6700" y="1000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		<Housing id="GRP-009" x="6700" y="1000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		<Housing id="GRP-010" x="6700" y="1000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		<Housing id="GRP-012" x="6700" y="1000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		<Housing id="GRP-013" x="6700" y="1000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		<Housing id="GRP-014" x="6700" y="1000" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		
-	</City>
+	<City id="Black Bottom" x="700" y="50" cred="10000">
 
-	<City id="SeaLab 017" x="10" y="10" cred="10000">
-	
-		<cRes id="Food" base="10">100</cRes>
-		<cRes id="Water" base="15">100</cRes>
-		<cRes id="Energy" base="75">0</cRes>
-		<cRes id="Metal" base="55">0</cRes>
-		<cRes id="Oil" base="35">0</cRes>
+		<Description>Deep in a shadows of sunless trench, Black Bottom, an old world mining operation never meant for human occupation has become a vestige and booming industrial hub.</Description>
+
+		<cRes id="Water" base="10">0</cRes>
+		<cRes id="Fish" base="10">0</cRes>
+		<cRes id="Seaweed" base="10">0</cRes>
+		<cRes id="Soylent" base="5">0</cRes>
+		<cRes id="Decapoda" base="15">0</cRes>
+		<cRes id="Jellies" base="8">0</cRes>
+		<cRes id="Voles" base="20">0</cRes>
+		<cRes id="Veggies" base="10">0</cRes>
+		<cRes id="Oil" base="25">0</cRes>
+		<cRes id="Hard Metals" base="35">0</cRes>
+		<cRes id="Soft Metals" base="10">0</cRes>
+		<cRes id="Chems" base="10">0</cRes>
+		<cRes id="Energy" base="15">0</cRes>
+		<cRes id="Minerals" base="10">0</cRes>
 		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Parts" base="120">0</cRes>
-		<cRes id="Lux" base="200">0</cRes>
-		<cRes id="OldLux" base="500">0</cRes>
-		
-		<Generator id="SF-Lab 03" x="10" y="10" product="Food" cost="0" out="1" time="10" pop="5" max="10"  cred="0">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Generator id="DS-Lab 01" x="10" y="10" product="Water" cost="0" out="1" time="10" pop="5" max="10"  cred="0">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Generator id="FE-Lab 04" x="10" y="10" product="Energy" cost="0" out="1" time="10" pop="5" max="10"  cred="0">
-			<gRes id="Food">0</gRes>
-			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
-		</Generator>
-		
-		<Housing id="HCC-Lab 07" x="10" y="10" pop="50" max="100" cred="0">
-			<hRes id="Food">50</hRes>
-			<hRes id="Water">50</hRes>
-		</Housing>
-		
-	</City>
-	
-	<City id="DeepMire" x="1000" y="4500" cred="10000">
-	
-		<cRes id="Food" base="10">100</cRes>
-		<cRes id="Water" base="15">100</cRes>
-		<cRes id="Energy" base="75">0</cRes>
-		<cRes id="Metal" base="55">0</cRes>
-		<cRes id="Oil" base="35">0</cRes>
-		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Parts" base="120">0</cRes>
-		<cRes id="Lux" base="200">0</cRes>
-		<cRes id="OldLux" base="500">0</cRes>
-		
-		<Ship id="Pincer" x="1000" y="4500" dock="DeepMire" cred="100" pop="10" max="20">
-			<sRes id="Food">20</sRes>
-			<sRes id="Water">20</sRes>
-			<sRes id="Energy">0</sRes>
-			<sRes id="Metal">0</sRes>
+		<cRes id="Plastic" base="10">0</cRes>
+		<cRes id="Drugs" base="10">0</cRes>
+		<cRes id="Electronics" base="10">0</cRes>
+		<cRes id="Glass" base="10">0</cRes>
+		<cRes id="Parts" base="55">0</cRes>
+		<cRes id="Shells" base="15">0</cRes>
+		<cRes id="Coral" base="35">0</cRes>
+		<cRes id="Pearls" base="75">0</cRes>
+		<cRes id="Spirits" base="20">0</cRes>
+		<cRes id="Salvage" base="10">0</cRes>
+
+		<Ship id="Steam Needle" x="700" y="50" speed="15" dock="Black Bottom" cred="100" pop="10" max="20">
+
+			<Description>The flag ship of the Black Bottom. It is fast and can withstand absurd amounts of pressure.</Description>
+
+			<sRes id="Water">0</sRes>
+			<sRes id="Fish">0</sRes>
+			<sRes id="Seaweed">0</sRes>
+			<sRes id="Soylent">0</sRes>
+			<sRes id="Decapoda">0</sRes>
+			<sRes id="Jellies">0</sRes>
+			<sRes id="Voles">0</sRes>
+			<sRes id="Veggies">0</sRes>
 			<sRes id="Oil">0</sRes>
-			<sRes id="Fuel">50</sRes>
-			<sRes id="Parts">0</sRes>
-			<sRes id="Lux">0</sRes>
-			<sRes id="OldLux">0</sRes>
-		</Ship>
-		
-		<Ship id="Barnacle" x="1000" y="4500" dock="DeepMire" cred="100" pop="10" max="20">
-			<sRes id="Food">20</sRes>
-			<sRes id="Water">20</sRes>
+			<sRes id="Hard Metals">0</sRes>
+			<sRes id="Soft Metals">0</sRes>
+			<sRes id="Chems">0</sRes>
 			<sRes id="Energy">0</sRes>
-			<sRes id="Metal">0</sRes>
-			<sRes id="Oil">0</sRes>
-			<sRes id="Fuel">50</sRes>
+			<sRes id="Minerals">0</sRes>
+			<sRes id="Fuel">0</sRes>
+			<sRes id="Plastic">0</sRes>
+			<sRes id="Drugs">0</sRes>
+			<sRes id="Electronics">0</sRes>
+			<sRes id="Glass">0</sRes>
 			<sRes id="Parts">0</sRes>
-			<sRes id="Lux">0</sRes>
-			<sRes id="OldLux">0</sRes>
+			<sRes id="Shells">0</sRes>
+			<sRes id="Coral">0</sRes>
+			<sRes id="Pearls">0</sRes>
+			<sRes id="Spirits">0</sRes>
+			<sRes id="Salvage">0</sRes>
 		</Ship>
-		
-		<Generator id="Worm Pastures" x="3700" y="1650" product="Food" cost="1" out="1" time="10" pop="5" max="10" cred="500">
-			<gRes id="Food">0</gRes>
+
+		<Generator id="Guzzle Rig" type="Well" pop="5" cred="500">
 			<gRes id="Water">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Metal">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
 			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
 			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
 			<gRes id="Parts">0</gRes>
-			<gRes id="Lux">0</gRes>
-			<gRes id="OldLux">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
 		</Generator>
 
-		<Housing id="Vent Side" x="1000" y="4500" pop="50" max="100" cred="100">
-			<hRes id="Food">50</hRes>
+		<Generator id="Jelly Nets" type="JellyNet" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Generator id="Drillinator" type="Miner" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Generator id="Voltier" type="PowerPlant" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Housing id="Sweat Bunks" pop="50" max="100" cred="100">
 			<hRes id="Water">50</hRes>
 		</Housing>
-		
+
+	</City>
+
+	<City id="Palamine" x="100" y="400" cred="10000">
+
+		<Description>Default</Description>
+
+		<cRes id="Water" base="10">0</cRes>
+		<cRes id="Fish" base="10">0</cRes>
+		<cRes id="Seaweed" base="10">0</cRes>
+		<cRes id="Soylent" base="5">0</cRes>
+		<cRes id="Decapoda" base="15">0</cRes>
+		<cRes id="Jellies" base="8">0</cRes>
+		<cRes id="Voles" base="20">0</cRes>
+		<cRes id="Veggies" base="10">0</cRes>
+		<cRes id="Oil" base="25">0</cRes>
+		<cRes id="Hard Metals" base="35">0</cRes>
+		<cRes id="Soft Metals" base="10">0</cRes>
+		<cRes id="Chems" base="10">0</cRes>
+		<cRes id="Energy" base="15">0</cRes>
+		<cRes id="Minerals" base="10">0</cRes>
+		<cRes id="Fuel" base="15">0</cRes>
+		<cRes id="Plastic" base="10">0</cRes>
+		<cRes id="Drugs" base="10">0</cRes>
+		<cRes id="Electronics" base="10">0</cRes>
+		<cRes id="Glass" base="10">0</cRes>
+		<cRes id="Parts" base="55">0</cRes>
+		<cRes id="Shells" base="15">0</cRes>
+		<cRes id="Coral" base="35">0</cRes>
+		<cRes id="Pearls" base="75">0</cRes>
+		<cRes id="Spirits" base="20">0</cRes>
+		<cRes id="Salvage" base="10">0</cRes>
+
+		<Ship id="Iron Pearl" x="100" y="400" speed="10" dock="Palamine" cred="100" pop="10" max="20">
+
+			<Description>Default</Description>
+
+			<sRes id="Water">0</sRes>
+			<sRes id="Fish">0</sRes>
+			<sRes id="Seaweed">0</sRes>
+			<sRes id="Soylent">0</sRes>
+			<sRes id="Decapoda">0</sRes>
+			<sRes id="Jellies">0</sRes>
+			<sRes id="Voles">0</sRes>
+			<sRes id="Veggies">0</sRes>
+			<sRes id="Oil">0</sRes>
+			<sRes id="Hard Metals">0</sRes>
+			<sRes id="Soft Metals">0</sRes>
+			<sRes id="Chems">0</sRes>
+			<sRes id="Energy">0</sRes>
+			<sRes id="Minerals">0</sRes>
+			<sRes id="Fuel">0</sRes>
+			<sRes id="Plastic">0</sRes>
+			<sRes id="Drugs">0</sRes>
+			<sRes id="Electronics">0</sRes>
+			<sRes id="Glass">0</sRes>
+			<sRes id="Parts">0</sRes>
+			<sRes id="Shells">0</sRes>
+			<sRes id="Coral">0</sRes>
+			<sRes id="Pearls">0</sRes>
+			<sRes id="Spirits">0</sRes>
+			<sRes id="Salvage">0</sRes>
+		</Ship>
+
+		<Generator id="Great Barrier" type="Reef" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Generator id="Clam Fields" type="MolluskBed" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Generator id="Reef Skimmer" type="Angler" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Generator id="Trinketeer" type="Collector" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+		<Housing id="Shell Cove" pop="50" max="100" cred="100">
+			<hRes id="Water">50</hRes>
+		</Housing>
+
+	</City>
+
+	<City id="Flat Sands Farm" x="1200" y="300" cred="10000">
+
+		<Description>Build on a tall plataue close to the water's surface, This is a lush green farm land full of fish and greenery.</Description>
+
+		<cRes id="Water" base="10">0</cRes>
+		<cRes id="Fish" base="10">0</cRes>
+		<cRes id="Seaweed" base="10">0</cRes>
+		<cRes id="Soylent" base="5">0</cRes>
+		<cRes id="Decapoda" base="15">0</cRes>
+		<cRes id="Jellies" base="8">0</cRes>
+		<cRes id="Voles" base="20">0</cRes>
+		<cRes id="Veggies" base="10">0</cRes>
+		<cRes id="Oil" base="25">0</cRes>
+		<cRes id="Hard Metals" base="35">0</cRes>
+		<cRes id="Soft Metals" base="10">0</cRes>
+		<cRes id="Chems" base="10">0</cRes>
+		<cRes id="Energy" base="15">0</cRes>
+		<cRes id="Minerals" base="10">0</cRes>
+		<cRes id="Fuel" base="15">0</cRes>
+		<cRes id="Plastic" base="10">0</cRes>
+		<cRes id="Drugs" base="10">0</cRes>
+		<cRes id="Electronics" base="10">0</cRes>
+		<cRes id="Glass" base="10">0</cRes>
+		<cRes id="Parts" base="55">0</cRes>
+		<cRes id="Shells" base="15">0</cRes>
+		<cRes id="Coral" base="35">0</cRes>
+		<cRes id="Pearls" base="75">0</cRes>
+		<cRes id="Spirits" base="20">0</cRes>
+		<cRes id="Salvage" base="10">0</cRes>
+
+		<Ship id="Farm Buggy" x="1200" y="300" speed="5" dock="Flat Sands Farm" cred="100" pop="10" max="20">
+
+			<Description>It doesn't move too fast. I's not very sleek or eligent. But starving men say its the most beaufitul thing they've ever seen.</Description>
+
+			<sRes id="Water">0</sRes>
+			<sRes id="Fish">0</sRes>
+			<sRes id="Seaweed">0</sRes>
+			<sRes id="Soylent">0</sRes>
+			<sRes id="Decapoda">0</sRes>
+			<sRes id="Jellies">0</sRes>
+			<sRes id="Voles">0</sRes>
+			<sRes id="Veggies">0</sRes>
+			<sRes id="Oil">0</sRes>
+			<sRes id="Hard Metals">0</sRes>
+			<sRes id="Soft Metals">0</sRes>
+			<sRes id="Chems">0</sRes>
+			<sRes id="Energy">0</sRes>
+			<sRes id="Minerals">0</sRes>
+			<sRes id="Fuel">0</sRes>
+			<sRes id="Plastic">0</sRes>
+			<sRes id="Drugs">0</sRes>
+			<sRes id="Electronics">0</sRes>
+			<sRes id="Glass">0</sRes>
+			<sRes id="Parts">0</sRes>
+			<sRes id="Shells">0</sRes>
+			<sRes id="Coral">0</sRes>
+			<sRes id="Pearls">0</sRes>
+			<sRes id="Spirits">0</sRes>
+			<sRes id="Salvage">0</sRes>
+		</Ship>
+
+		<Generator id="Bundler" type="Harvester" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Generator id="Clap Trapper" type="Crabber" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Generator id="Scoop Netter" type="Angler" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Generator id="Rain Buckets" type="RainBuckets" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Housing id="Farm House" pop="50" max="100" cred="100">
+			<hRes id="Water">50</hRes>
+		</Housing>
+
+	</City>
+
+	<City id="Junk Town" x="650" y="850" cred="10000">
+
+		<Description>A city held together with spit and duct tape. Its a miracle it's water proof but damn those junker's can build.</Description>
+
+		<cRes id="Water" base="10">0</cRes>
+		<cRes id="Fish" base="10">0</cRes>
+		<cRes id="Seaweed" base="10">0</cRes>
+		<cRes id="Soylent" base="5">0</cRes>
+		<cRes id="Decapoda" base="15">0</cRes>
+		<cRes id="Jellies" base="8">0</cRes>
+		<cRes id="Voles" base="20">0</cRes>
+		<cRes id="Veggies" base="10">0</cRes>
+		<cRes id="Oil" base="25">0</cRes>
+		<cRes id="Hard Metals" base="35">0</cRes>
+		<cRes id="Soft Metals" base="10">0</cRes>
+		<cRes id="Chems" base="10">0</cRes>
+		<cRes id="Energy" base="15">0</cRes>
+		<cRes id="Minerals" base="10">0</cRes>
+		<cRes id="Fuel" base="15">0</cRes>
+		<cRes id="Plastic" base="10">0</cRes>
+		<cRes id="Drugs" base="10">0</cRes>
+		<cRes id="Electronics" base="10">0</cRes>
+		<cRes id="Glass" base="10">0</cRes>
+		<cRes id="Parts" base="55">0</cRes>
+		<cRes id="Shells" base="15">0</cRes>
+		<cRes id="Coral" base="35">0</cRes>
+		<cRes id="Pearls" base="75">0</cRes>
+		<cRes id="Spirits" base="20">0</cRes>
+		<cRes id="Salvage" base="10">0</cRes>
+
+		<Ship id="Wave Breaker" x="650" y="850" speed="5" dock="Junk Town" cred="100" pop="10" max="20">
+
+			<Description>The flag ship of Junk Town.</Description>
+
+			<sRes id="Water">0</sRes>
+			<sRes id="Fish">0</sRes>
+			<sRes id="Seaweed">0</sRes>
+			<sRes id="Soylent">0</sRes>
+			<sRes id="Decapoda">0</sRes>
+			<sRes id="Jellies">0</sRes>
+			<sRes id="Voles">0</sRes>
+			<sRes id="Veggies">0</sRes>
+			<sRes id="Oil">0</sRes>
+			<sRes id="Hard Metals">0</sRes>
+			<sRes id="Soft Metals">0</sRes>
+			<sRes id="Chems">0</sRes>
+			<sRes id="Energy">0</sRes>
+			<sRes id="Minerals">0</sRes>
+			<sRes id="Fuel">0</sRes>
+			<sRes id="Plastic">0</sRes>
+			<sRes id="Drugs">0</sRes>
+			<sRes id="Electronics">0</sRes>
+			<sRes id="Glass">0</sRes>
+			<sRes id="Parts">0</sRes>
+			<sRes id="Shells">0</sRes>
+			<sRes id="Coral">0</sRes>
+			<sRes id="Pearls">0</sRes>
+			<sRes id="Spirits">0</sRes>
+			<sRes id="Salvage">0</sRes>
+		</Ship>
+
+		<Generator id="Go Juice Depot" type="Refinery" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Generator id="Welding Yard" type="Yard" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Generator id="Chum Hall" type="SoylentPress" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Generator id="Vole Pits" type="VolePit" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Generator id="Blue Saloon" type="Distillery" pop="5" cred="500">
+			<gRes id="Water">0</gRes>
+			<gRes id="Fish">0</gRes>
+			<gRes id="Seaweed">0</gRes>
+			<gRes id="Soylent">0</gRes>
+			<gRes id="Decapoda">0</gRes>
+			<gRes id="Jellies">0</gRes>
+			<gRes id="Voles">0</gRes>
+			<gRes id="Veggies">0</gRes>
+			<gRes id="Oil">0</gRes>
+			<gRes id="Hard Metals">0</gRes>
+			<gRes id="Soft Metals">0</gRes>
+			<gRes id="Chems">0</gRes>
+			<gRes id="Energy">0</gRes>
+			<gRes id="Minerals">0</gRes>
+			<gRes id="Fuel">0</gRes>
+			<gRes id="Plastic">0</gRes>
+			<gRes id="Drugs">0</gRes>
+			<gRes id="Electronics">0</gRes>
+			<gRes id="Glass">0</gRes>
+			<gRes id="Parts">0</gRes>
+			<gRes id="Shells">0</gRes>
+			<gRes id="Coral">0</gRes>
+			<gRes id="Pearls">0</gRes>
+			<gRes id="Spirits">0</gRes>
+			<gRes id="Salvage">0</gRes>
+		</Generator>
+
+		<Housing id="Slum Town" pop="50" max="100" cred="100">
+			<hRes id="Water">50</hRes>
+		</Housing>
 	</City>
 </class>

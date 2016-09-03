@@ -1,10 +1,11 @@
 package engine;
-import java.awt.Canvas;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
+import marketflow.Entity;
+
+import java.awt.*;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.swing.JFrame;
 
@@ -12,14 +13,15 @@ import javax.swing.JFrame;
 
 public class Game extends Canvas implements Runnable
 {
+	//TODO: Remove this.. temporary
+	public static Map<Entity, Rectangle> clickables = new HashMap<>();
+
 	private static final long serialVersionUID = 1L;
 	public static int WIDTH = 1700, HEIGHT = 900;
 	public static double SCALE = 1.0;		//zoom value
 	public static boolean running = false;	//game running
 	public Thread gameThread;
 	static final int tickLength = 2;
-	//Temporary Method of tracking resources
-	public static String cityView = "White Shards";
 	
 	private BufferedImage spriteSheet;		
 	public static enum State

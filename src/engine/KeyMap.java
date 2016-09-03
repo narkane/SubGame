@@ -67,37 +67,6 @@ public class KeyMap
 			case "SwitchToME":
 				Game.state(Game.State.MYESTATE);
 				break;
-				
-			case "ViewC01":
-				Game.cityView="Old Town";
-				break;
-			case "ViewC02":
-				Game.cityView="Black Bottom";
-				break;
-			case "ViewC03":
-				Game.cityView="White Shards";
-				break;
-			case "ViewC04":
-				Game.cityView="Flat Sand Farms";
-				break;
-			case "ViewC05":
-				Game.cityView="Palamine";
-				break;
-			case "ViewC06":
-				Game.cityView="Junk Town";
-				break;
-			case "ViewC07":
-				Game.cityView="The Expanse";
-				break;
-			case "ViewC08":
-				Game.cityView="Bastion";
-				break;
-			case "ViewC09":
-				Game.cityView="SeaLab 017";
-				break;
-			case "ViewC10":
-				Game.cityView="DeepMire";
-				break;
 			}
 		}
 		else

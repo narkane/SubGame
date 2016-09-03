@@ -1,6 +1,6 @@
 package marketflow;
 
-import java.awt.Graphics;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -26,18 +26,21 @@ public class Ship extends Entity
 	private City dest;
 	private City dock;
 	
-	private int speed = 15;
-	//private Map<String, Map<String, Integer>> priceDeltas;
+	private int speed = 0;
+	private int maxspeed;
 	
-	public Ship(String id, int x, int y, String location, String alliance, Map<String, City> c_ref, Map<String, Stock> ref, int pm)
+	public Ship(String id, String desc, int x, int y, int spd, String location, String alliance, Map<String, City> c_ref, Map<String, Stock> ref, int pm)
 	{
-		super(id, ref, x, y);
+		super(id, desc, ref, x, y);
 		PopulationMax=pm;
 		cityRef=c_ref;
 		home=cityRef.get(alliance);
 		dock=cityRef.get(location);
 		dest=null;
+		maxspeed=spd;
 		img = Game.gfx.load("res/ship.png");
+		hitbox=new Rectangle(posX-img.getWidth()/2, posY-img.getHeight()/2, img.getWidth(), img.getHeight());
+		//Game.clickables.put(this,hitbox);
 	}
 
 	public City Location()
@@ -52,6 +55,9 @@ public class Ship extends Entity
 	{
 		return home;
 	}
+
+	public int X(){return posX;}
+	public int Y(){return posX;}
 
 	int stallCount = 0;
 	int stallAmt = 200;
@@ -171,15 +177,24 @@ public class Ship extends Entity
 			break;
 		case ENROUTE:
 			//Go go go!
-			posX += speed * Math.cos(Math.atan2(dest.Y()-posY,dest.X()-posX));
-			posY += speed * Math.sin(Math.atan2(dest.Y()-posY,dest.X()-posX));
-			
+			double angle = Math.atan2(dest.Y() - posY, dest.X() - posX);
+
+			posX += speed * Math.cos(angle);
+			posY += speed * Math.sin(angle);
+
+			hitbox.setLocation(posX+Game.mf.mapOffsetX-img.getWidth()/2, posY+Game.mf.mapOffsetY-img.getHeight()/2);
+
 			double a = dest.X()-posX;
 			double b = dest.Y()-posY;
-			
-			if(Math.sqrt(a*a+b*b)<speed)
+			if(Math.sqrt(a*a+b*b)<speed*10)
 			{//you made it!
-				state=State.UNLOADING;
+				speed--;
+				if(speed==0){state=State.UNLOADING;}
+			}
+			else
+			{
+				speed++;
+				if(speed>=maxspeed){speed=maxspeed;}
 			}
 			
 			break;

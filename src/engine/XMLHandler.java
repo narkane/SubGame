@@ -72,6 +72,7 @@ public class XMLHandler
 		String gen;
 		String res;
 		String house;
+		String desc;
 		Map<String, Integer> basePrices;
 
 		Document doc = read("data/marketflow/ResInfo.xml");
@@ -83,9 +84,12 @@ public class XMLHandler
 			
 			//sets city name
 			city = c_elem.getAttribute("id");
-			
+			//get description of city
+			desc = c_elem.getElementsByTagName("Description").item(0).getTextContent();
+
 			//initializes city
 			cc.put(city, new City(city,							//City Name
+					desc,										//Description of City
 					Integer.parseInt(c_elem.getAttribute("x")),	//X Coordinate
 					Integer.parseInt(c_elem.getAttribute("y")),	//Y Coordinate
 					sc,											//Ship Collection
@@ -129,10 +133,16 @@ public class XMLHandler
 				
 				//Get last known location for loading in
 				String docked = s_elem.getAttribute("dock");
+
+				//Get description of ship
+				desc = s_elem.getElementsByTagName("Description").item(0).getTextContent();
+
 				//initializes ship
 				sc.put(ship, new Ship(ship,								//Ship Name
+						desc,
 						Integer.parseInt(s_elem.getAttribute("x")),		//X Coordinate
 						Integer.parseInt(s_elem.getAttribute("y")),		//Y Coordinate
+						Integer.parseInt(s_elem.getAttribute("speed")),	//Max Speed
 						docked,											//Starting Location
 						city,											//Home City
 						cc,												//reference to City Collection
@@ -167,33 +177,20 @@ public class XMLHandler
 				Node g_node = g_nodes.item(j);
 				Element g_elem = (Element) g_node;
 				
-				NodeList input_nodes = g_elem.getElementsByTagName("in");
-				String[] inputs = new String[input_nodes.getLength()];
-				for(int k = 0; k < input_nodes.getLength(); k++)
-				{//find inputs (ingredients) required for creating product...?
-					Node input_node = input_nodes.item(k);
-					Element input_elem = (Element) input_node;
-					
-					inputs[k]=input_elem.getAttribute("id");
-				}
-				
 				//sets generator name
 				gen = g_elem.getAttribute("id");
-				
-				//initializes generator
-				gc.put(gen, new Generator(gen,							//ID (Name) of Generator
-						Integer.parseInt(g_elem.getAttribute("x")),		//X Coordinate
-						Integer.parseInt(g_elem.getAttribute("y")),		//Y Coordinate
-						Integer.parseInt(g_elem.getAttribute("cost")),	//Cost of production
-						Integer.parseInt(g_elem.getAttribute("out")),	//Output amount (how many products per tick)
-						inputs,											//List of ingredients required for production
-						g_elem.getAttribute("product"),					//Name of Product Producted
+				//get generator type
+				String gentype = g_elem.getAttribute("type");
+
+				gc.put(gen, makeGenerator(gentype,
+						gen,
+						Integer.parseInt(c_elem.getAttribute("x")),		//X Coordinate
+						Integer.parseInt(c_elem.getAttribute("y")),		//Y Coordinate
 						city,											//Name of Home City
 						cc,												//reference to City Collection
-						grc,											//reference to Generator Resource Stock
-						Integer.parseInt(g_elem.getAttribute("time")),	//Amount of time required to produce
-						Integer.parseInt(g_elem.getAttribute("max"))	//Max Population of workers. (Do i really need this to be dynamic?)
+						grc												//reference to Generator Resource Stock
 				));
+
 				//initializes generator credit amount
 				gc.get(gen).Credit(Integer.parseInt(g_elem.getAttribute("cred")));
 				//initializes generator worker population amount
@@ -206,7 +203,7 @@ public class XMLHandler
 				{
 					Node gr_node = gr_nodes.item(k);
 					Element gr_elem = (Element) gr_node;
-					
+
 					//sets generator resource product type
 					res = gr_elem.getAttribute("id");
 					//initializes generator resource stock (if not already)
@@ -226,10 +223,11 @@ public class XMLHandler
 
 				//initializes housing unit
 				hc.put(house, new Housing(house,                        //Name of House
-						Integer.parseInt(h_elem.getAttribute("x")),        //X Coordinate
-						Integer.parseInt(h_elem.getAttribute("y")),        //Y Coordinate
+						"",
+						Integer.parseInt(c_elem.getAttribute("x")),        //X Coordinate
+						Integer.parseInt(c_elem.getAttribute("y")),        //Y Coordinate
 						city,                                            //Name of Home City
-						cc,                                                //reference to City Collection
+						cc,                                             //reference to City Collection
 						hrc,                                            //reference to Housing Resource Stock
 						Integer.parseInt(h_elem.getAttribute("max"))    //Max Population of Dwellers
 				));
@@ -260,6 +258,52 @@ public class XMLHandler
 		}
 	}
 
+	private Generator makeGenerator(
+		String type,
+		String id,
+		int x,
+		int y,
+		String city,
+		Map<String, City> cc,
+		Map<String, Stock> grc
+	)
+	{
+		Document doc = read("data/marketflow/GenInfo.xml");
+		NodeList nodes = doc.getElementsByTagName("Gen");
+		Element elem = null;
+		for(int i = 0; i < nodes.getLength(); i++)
+		{
+			Node node = nodes.item(i);
+			elem = (Element) node;
+			if(elem.getAttribute("id").equals(type)){break;}
+		}
+
+		String[] inputs = new String[]{};
+		try{NodeList input_nodes = elem.getElementsByTagName("Input");
+		inputs = new String[input_nodes.getLength()];
+		for(int k = 0; k < input_nodes.getLength(); k++)
+		{//find inputs (ingredients) required for creating product...?
+			Node input_node = input_nodes.item(k);
+			Element input_elem = (Element) input_node;
+
+			inputs[k]=input_elem.getTextContent();
+		}}catch(Exception e){}
+
+		return new Generator(id,
+				elem.getElementsByTagName("Description").item(0).getTextContent(),
+				x,
+				y,
+				Integer.parseInt(elem.getAttribute("cost")),
+				Integer.parseInt(elem.getAttribute("out")),
+				inputs,
+				elem.getAttribute("product"),
+				city,
+				cc,
+				grc,
+				Integer.parseInt(elem.getAttribute("time")),
+				Integer.parseInt(elem.getAttribute("max"))
+		);
+	}
 	public void processSubBattle()
 	{
 		// TODO Auto-generated method stub

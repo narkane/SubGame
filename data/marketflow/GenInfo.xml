@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<class>
+<!--Consumables-->
+    <Gen id="IcePick" product="Water" cost="1" max="10" out="1" time="10">
+        <Description>A ship with a saw like graspers for removing pieces from the bottom of icebergs to be thawed into fresh water.</Description>
+    </Gen>
+    <Gen id="Boiler" product="Water" cost="1" max="10" out="1" time="10">
+        <Description>Large pod designed to heat water into steam and then collect the condensation as fresh water.</Description>
+        <Input>Fuel</Input>
+    </Gen>
+    <Gen id="Desalinator" product="Water" cost="1" max="10" out="1" time="10">
+        <Description>High tech process of removing salt be shocking it to hell!</Description>
+        <Input>Energy</Input>
+    </Gen>
+    <Gen id="RainBuckets" product="Water" cost="1" max="10" out="1" time="10">
+        <Description>Surface floaters attached to wipe funnels used to direct water down into a filtration system.</Description>
+    </Gen>
+    <Gen id="Angler" product="Fish" cost="1" max="10" out="1" time="10">
+        <Description>A ship with a forward facing trawling net for sweeping through schools of fish.</Description>
+    </Gen>
+    <Gen id="Harvester" product="Seaweed" cost="1" max="10" out="1" time="10">
+        <Description>A ship with long reapers used for mowing massive fields of kelp and seaweed.</Description>
+    </Gen>
+    <Gen id="SoylentPress" product="Soylent" cost="1" max="10" out="1" time="10">
+        <Description>Mixing chemical geletine byproducts with seaweed "nutrient" extract and squishing them into "edible" cubes. Hey its better than starving!</Description>
+        <Input>Seaweed</Input>
+    </Gen>
+    <Gen id="Crabber" product="Decapoda" cost="1" max="10" out="1" time="10">
+        <Description>A none manned drone used for monitoring decapod and bringing in the harvest as they mature.</Description>
+    </Gen>
+    <Gen id="JellyNet" product="Jellies" cost="1" max="10" out="1" time="10">
+        <Description>Huge fan like nets adorned in dim lights to attract and catch all the strange jellies that float along the deepest sunless trenches.</Description>
+    </Gen>
+    <Gen id="VolePit" product="Voles" cost="1" max="10" out="1" time="10">
+        <Description>Sold to rich foreigners as an "old world delicacy", most common folk know that these disgusting rodents used to infest old cargo ships and decimate food stores.</Description>
+        <Input>Fish</Input>
+    </Gen>
+    <Gen id="Hydroponics" product="Veggies" cost="1" max="10" out="1" time="10">
+        <Description>One of the most guarded resources in the ocean are old world seeds. These fortress like gardens are only owns or even seen by the most elite.</Description>
+        <Input>Water</Input>
+        <Input>Energy</Input>
+    </Gen>
+<!--Goods-->
+    <!--Mats-->
+    <Gen id="Well" product="Oil" cost="1" max="10" out="1" time="10">
+        <Description>Old black gold is still just as valuable as ever, it is the source for most power along the ocean floor.</Description>
+    </Gen>
+    <Gen id="Miner" product="Hard Metals" cost="1" max="10" out="1" time="10">
+        <Description>A ship with a various drilling and mining tools for boring holes straight through ocean bedrock in search of hard metals.</Description>
+    </Gen>
+    <Gen id="Sifter" product="Soft Metals" cost="1" max="10" out="1" time="10">
+        <Description>A ship with a forward scooper used to shovel soil into its top loading sifter which extracts trace fragments of precious metals.</Description>
+    </Gen>
+    <Gen id="Sampler" product="Chems" cost="1" max="10" out="1" time="10">
+        <Description>This none manned drone floats along with the current until it catches faint whiffs of desirable chemicals. It then zeros in on the trail and goes to collect its source.</Description>
+    </Gen>
+    <Gen id="Turbine" product="Energy" cost="1" max="10" out="1" time="10">
+        <Description>Huge fans that sit in jet stream currents and crank massive generators.</Description>
+    </Gen>
+    <Gen id="PowerPlant" product="Energy" cost="1" max="10" out="1" time="10">
+        <Description>Fuel goes in, power comes out.</Description>
+        <Input>Fuel</Input>
+    </Gen>
+    <Gen id="Excavator" product="Minerals" cost="1" max="10" out="1" time="10">
+        <Description>A ship with large forward facing grinders used to smash and collect minerals</Description>
+    </Gen>
+    <!--Fabs-->
+    <Gen id="Refinery" product="Fuel" cost="1" max="10" out="1" time="10">
+        <Description>Oil goes in, fuel comes out.</Description>
+        <Input>Oil</Input>
+    </Gen>
+    <Gen id="PolyPlant" product="Plastic" cost="1" max="10" out="1" time="10">
+        <Description>Oil goes in, plastics come out.</Description>
+        <Input>Oil</Input>
+    </Gen>
+    <Gen id="Pharmacy" product="Drugs" cost="1" max="10" out="1" time="10">
+        <Description>Get your drugs here! Drugs of all kinds! Fresh from the purifier!</Description>
+        <Input>Chems</Input>
+    </Gen>
+    <Gen id="Lab" product="Electronics" cost="1" max="10" out="1" time="10">
+        <Description>Sciencey stuff turns metal into electrical components. Thank god some nerds survived the apocalypes.</Description>
+        <Input>Soft Metals</Input>
+    </Gen>
+    <Gen id="Blower" product="Glass" cost="1" max="10" out="1" time="10">
+        <Description>Not even sure what this looks like.. it turns sand into glass or something..</Description>
+        <Input>Minerals</Input>
+    </Gen>
+    <Gen id="Yard" product="Parts" cost="1" max="10" out="1" time="10">
+        <Description>Build metal parts..</Description>
+        <Input>Hard Metals</Input>
+    </Gen>
+<!--Luxuries-->
+    <Gen id="Collector" product="Shells" cost="1" max="10" out="1" time="10">
+        <Description>A a very basic ship with standard robotic arms for collecting materials or performing work. Usually piloted by common folk in search shells or other interesting trinkets.</Description>
+    </Gen>
+    <Gen id="Reef" product="Coral" cost="1" max="10" out="1" time="10">
+        <Description>Lush, colorful, tropical coral reefs, ripe for exploitation.</Description>
+    </Gen>
+    <Gen id="MolluskBed" product="Pearls" cost="1" max="10" out="1" time="10">
+        <Description>These filter feeders are much too poisonous to eat now adays but we still like to shuck em and look for pearls!</Description>
+    </Gen>
+    <Gen id="Distillery" product="Spirits" cost="1" max="10" out="1" time="10">
+        <Description>A pod where they make barely potable swill made from fermenting seaweed.. But hey! gets you krunk!</Description>
+        <Input>Seaweed</Input>
+        <Input>Water</Input>
+    </Gen>
+    <Gen id="Salvager" product="Salvage" cost="1" max="10" out="1" time="10">
+        <Description>A ship specifically designed to find old world wreckage and pull of anything of value. You'd be amazing what people pay for this junk!</Description>
+    </Gen>
+</class>

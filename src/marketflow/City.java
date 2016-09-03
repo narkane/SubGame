@@ -1,11 +1,11 @@
 package marketflow;
 
+import java.awt.*;
 import java.util.Map;
 
 import engine.Game;
 
 import java.util.List;
-import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -24,14 +24,17 @@ public class City extends Entity
 	private Map<String, Integer> prices;
 	private Map<String, Integer> basePrices;
 	
-	public City(String id, int x, int y, Map<String, Ship> sh_ref, Map<String, Generator> g_ref, Map<String, Housing> h_ref, Map<String, Stock> st_ref)
+	public City(String id, String desc, int x, int y, Map<String, Ship> sh_ref, Map<String, Generator> g_ref, Map<String, Housing> h_ref, Map<String, Stock> st_ref)
 	{
-		super(id, st_ref, x, y);
+		super(id, desc, st_ref, x, y);
 		shipRef=sh_ref;
 		genRef=g_ref;
 		houseRef=h_ref;
 		prices = new HashMap<String, Integer>();
 		img = Game.gfx.load("res/city.png");
+		hitbox=new Rectangle(posX-img.getWidth()/2, posY-img.getHeight()/2, img.getWidth(), img.getHeight());
+		//TODO: remove this. temporary
+		Game.clickables.put(this,hitbox);
 	}
 
 	public void BasePrices(Map<String, Integer> in)
@@ -61,14 +64,7 @@ public class City extends Entity
 			int price = Math.round(fin);
 			prices.put(s.Name, price);
 		}
-		
-		if(tickCount%50==0)
-		for(String house : housing)
-		{//Collect Taxes
-			int amt = (int)(houseRef.get(house).Credit()*houseTax);
-			houseRef.get(house).incCredit(-amt);
-			incCredit(amt);
-		}
+
 	}
 	
 	public void render(Graphics g)
@@ -121,7 +117,7 @@ public class City extends Entity
 		int pop = 0;
 		for(Housing h : houseRef.values())
 		{
-			if(h.Allience()==ID)
+			if(h.Home().ID.equals(ID))
 			{
 				pop=pop+h.Population;
 			}

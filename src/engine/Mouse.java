@@ -1,9 +1,11 @@
 package engine;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
+import java.util.Map;
 
 public class Mouse implements MouseListener, MouseMotionListener, MouseWheelListener
 {
@@ -21,7 +23,16 @@ public class Mouse implements MouseListener, MouseMotionListener, MouseWheelList
 	@Override
 	public void mouseClicked(MouseEvent me)
 	{
-		
+		int x = me.getX()-instance.mf.mapOffsetX;
+		int y = me.getY()-instance.mf.mapOffsetY;
+		//TODO: Remove this.. temporary
+		for(Map.Entry<marketflow.Entity, Rectangle> e : Game.clickables.entrySet())
+		{
+			if(e.getValue().contains(x, y))
+			{
+				e.getKey().print();
+			}
+		}
 	}
 
 	@Override
@@ -63,6 +74,6 @@ public class Mouse implements MouseListener, MouseMotionListener, MouseWheelList
 	@Override
 	public void mouseMoved(MouseEvent me)
 	{
-		
+
 	}	
 }
