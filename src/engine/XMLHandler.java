@@ -71,6 +71,7 @@ public class XMLHandler
 		String ship;
 		String gen;
 		String res;
+		String restype;
 		String house;
 		String desc;
 		Map<String, Integer> basePrices;
@@ -111,10 +112,13 @@ public class XMLHandler
 				
 				//sets city resource product type
 				res = cr_elem.getAttribute("id");
+				//sets the cargo type
+				restype = cr_elem.getAttribute("type");
+				//set the base price
 				basePrices.put(res, Integer.parseInt(cr_elem.getAttribute("base")));
 
 				//initializes city resource stock (if not already)
-				if(crc.get(res)==null){crc.put(res, new Stock(res));}
+				if(crc.get(res)==null){crc.put(res, new Stock(res, restype));}
 				//initializes city's resource stock amount
 				crc.get(res).initStock(city, Integer.parseInt(cr_elem.getTextContent()));
 			}
@@ -164,8 +168,11 @@ public class XMLHandler
 					
 					//sets ship resource product type
 					res = sr_elem.getAttribute("id");
+					//set cargo type
+					restype = sr_elem.getAttribute("type");
+
 					//initializes ship resource stock (if not already)
-					if(src.get(res)==null){src.put(res, new Stock(res));}
+					if(src.get(res)==null){src.put(res, new Stock(res, restype));}
 					//initializes ship's resource stock amount
 					src.get(res).initStock(ship, Integer.parseInt(sr_elem.getTextContent()));
 				}
@@ -206,8 +213,11 @@ public class XMLHandler
 
 					//sets generator resource product type
 					res = gr_elem.getAttribute("id");
+					//set cargo type
+					restype = gr_elem.getAttribute("type");
+
 					//initializes generator resource stock (if not already)
-					if(grc.get(res)==null){grc.put(res, new Stock(res));}
+					if(grc.get(res)==null){grc.put(res, new Stock(res, restype));}
 					//initializes generator's resource stock amount
 					grc.get(res).initStock(gen, Integer.parseInt(gr_elem.getTextContent()));
 				}
@@ -247,9 +257,12 @@ public class XMLHandler
 
 					//sets housing resource type
 					res = hr_elem.getAttribute("id");
+					//set cargo type
+					restype = hr_elem.getAttribute("type");
+
 					//initializes housing resource stock (if not already)
 					if (hrc.get(res) == null) {
-						hrc.put(res, new Stock(res));
+						hrc.put(res, new Stock(res, restype));
 					}
 					//initializes housing unit's resource stock amount
 					hrc.get(res).initStock(house, Integer.parseInt(hr_elem.getTextContent()));

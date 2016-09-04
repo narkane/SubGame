@@ -48,10 +48,9 @@ public class City extends Entity
 		return basePrices;
 	}
 
-	public void update(int count, int tickCount)
+	public void update(int count)
 	{
-		super.update(count, tickCount);
-		
+
 		for(Stock s : stockRef.values())
 		{//Find appropriate prices.
 			float amt = (float)s.Resource(ID);

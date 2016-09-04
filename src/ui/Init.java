@@ -12,7 +12,7 @@ public class Init
 		
 	}
 	
-	public void update(int count, int tickCount)
+	public void update(int count)
 	{
 
 	}
@@ -21,4 +21,7 @@ public class Init
 	{
 		g.drawString("UserInterface", 100, 10);
 	}
+
+    public void tick(int second) {
+    }
 }

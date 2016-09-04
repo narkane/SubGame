@@ -12,7 +12,7 @@ public class Init
 		xmlh.processSubBattle();
 	}
 	
-	public void update(int count, int tickCount)
+	public void update(int count)
 	{
 
 	}
@@ -20,5 +20,8 @@ public class Init
 	public void render(Graphics g)
 	{
 		g.drawString("SubBattle", 100, 10);
+	}
+
+	public void tick(int second) {
 	}
 }

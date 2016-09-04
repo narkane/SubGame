@@ -142,7 +142,9 @@ public class Entity
 			rowNum++;
 		}
 	}
-	
+
+	public void tick(int count) {}
+
 	public void render(Graphics g)
 	{
 

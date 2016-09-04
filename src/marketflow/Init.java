@@ -75,26 +75,44 @@ public class Init
 		}
 	}
 
-	public void update(int count, int tickCount)
+	public void update(int count)
 	{
 		for(City c : _cityColl.values())
 		{
-			c.update(count, tickCount);
+			c.update(count);
 		}
 		for(Ship s : _shipColl.values())
 		{
-			s.update(count, tickCount);
+			s.update(count);
 		}
 		for(Generator g : _genColl.values())
 		{
-			g.update(count, tickCount);
+			g.update(count);
 		}
 		for(Housing h : _houseColl.values())
 		{
-			h.update(count, tickCount);
+			h.update(count);
 		}
 	}
-	
+	public void tick(int count)
+	{
+		for(City c : _cityColl.values())
+		{
+			c.tick(count);
+		}
+		for(Ship s : _shipColl.values())
+		{
+			s.tick(count);
+		}
+		for(Generator g : _genColl.values())
+		{
+			g.tick(count);
+		}
+		for(Housing h : _houseColl.values())
+		{
+			h.tick(count);
+		}
+	}
 	public void render(Graphics g)
 	{
 		g.drawImage(mapImg, mapOffsetX, mapOffsetY, null, null);

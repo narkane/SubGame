@@ -5,177 +5,189 @@
 
 		<Description>Deep in a shadows of sunless trench, Black Bottom, an old world mining operation never meant for human occupation has become a vestige and booming industrial hub.</Description>
 
-		<cRes id="Water" base="10">0</cRes>
-		<cRes id="Fish" base="10">0</cRes>
-		<cRes id="Seaweed" base="10">0</cRes>
-		<cRes id="Soylent" base="5">0</cRes>
-		<cRes id="Decapoda" base="15">0</cRes>
-		<cRes id="Jellies" base="8">0</cRes>
-		<cRes id="Voles" base="20">0</cRes>
-		<cRes id="Veggies" base="10">0</cRes>
-		<cRes id="Oil" base="25">0</cRes>
-		<cRes id="Hard Metals" base="35">0</cRes>
-		<cRes id="Soft Metals" base="10">0</cRes>
-		<cRes id="Chems" base="10">0</cRes>
-		<cRes id="Energy" base="15">0</cRes>
-		<cRes id="Minerals" base="10">0</cRes>
-		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Plastic" base="10">0</cRes>
-		<cRes id="Drugs" base="10">0</cRes>
-		<cRes id="Electronics" base="10">0</cRes>
-		<cRes id="Glass" base="10">0</cRes>
-		<cRes id="Parts" base="55">0</cRes>
-		<cRes id="Shells" base="15">0</cRes>
-		<cRes id="Coral" base="35">0</cRes>
-		<cRes id="Pearls" base="75">0</cRes>
-		<cRes id="Spirits" base="20">0</cRes>
-		<cRes id="Salvage" base="10">0</cRes>
+		<cRes id="Water" type="consumable" base="10">0</cRes>
+		<cRes id="Fish" type="consumable" base="10">0</cRes>
+		<cRes id="Seaweed" type="consumable" base="10">0</cRes>
+		<cRes id="Soylent" type="consumable" base="5">0</cRes>
+		<cRes id="Decapoda" type="consumable" base="15">0</cRes>
+		<cRes id="Jellies" type="consumable" base="8">0</cRes>
+		<cRes id="Voles" type="consumable" base="20">0</cRes>
+		<cRes id="Veggies" type="consumable" base="10">0</cRes>
+		<cRes id="Oil" type="good" base="25">0</cRes>
+		<cRes id="Hard Metals" type="good" base="35">0</cRes>
+		<cRes id="Soft Metals" type="good" base="10">0</cRes>
+		<cRes id="Chems" type="good" base="10">0</cRes>
+		<cRes id="Energy" type="good" base="15">0</cRes>
+		<cRes id="Minerals" type="good" base="10">0</cRes>
+		<cRes id="Fuel" type="good" base="15">0</cRes>
+		<cRes id="Plastic" type="good" base="10">0</cRes>
+		<cRes id="Drugs" type="good" base="10">0</cRes>
+		<cRes id="Electronics" type="good" base="10">0</cRes>
+		<cRes id="Glass" type="good" base="10">0</cRes>
+		<cRes id="Parts" type="good" base="55">0</cRes>
+		<cRes id="Shells" type="luxury" base="15">0</cRes>
+		<cRes id="Coral" type="luxury" base="35">0</cRes>
+		<cRes id="Pearls" type="luxury" base="75">0</cRes>
+		<cRes id="Spirits" type="luxury" base="20">0</cRes>
+		<cRes id="Salvage" type="luxury" base="10">0</cRes>
 
 		<Ship id="Steam Needle" x="700" y="50" speed="15" dock="Black Bottom" cred="100" pop="10" max="20">
 
 			<Description>The flag ship of the Black Bottom. It is fast and can withstand absurd amounts of pressure.</Description>
 
-			<sRes id="Water">0</sRes>
-			<sRes id="Fish">0</sRes>
-			<sRes id="Seaweed">0</sRes>
-			<sRes id="Soylent">0</sRes>
-			<sRes id="Decapoda">0</sRes>
-			<sRes id="Jellies">0</sRes>
-			<sRes id="Voles">0</sRes>
-			<sRes id="Veggies">0</sRes>
-			<sRes id="Oil">0</sRes>
-			<sRes id="Hard Metals">0</sRes>
-			<sRes id="Soft Metals">0</sRes>
-			<sRes id="Chems">0</sRes>
-			<sRes id="Energy">0</sRes>
-			<sRes id="Minerals">0</sRes>
-			<sRes id="Fuel">0</sRes>
-			<sRes id="Plastic">0</sRes>
-			<sRes id="Drugs">0</sRes>
-			<sRes id="Electronics">0</sRes>
-			<sRes id="Glass">0</sRes>
-			<sRes id="Parts">0</sRes>
-			<sRes id="Shells">0</sRes>
-			<sRes id="Coral">0</sRes>
-			<sRes id="Pearls">0</sRes>
-			<sRes id="Spirits">0</sRes>
-			<sRes id="Salvage">0</sRes>
+			<sRes id="Water" type="consumable">0</sRes>
+			<sRes id="Fish" type="consumable">0</sRes>
+			<sRes id="Seaweed" type="consumable">0</sRes>
+			<sRes id="Soylent" type="consumable">0</sRes>
+			<sRes id="Decapoda" type="consumable">0</sRes>
+			<sRes id="Jellies" type="consumable">0</sRes>
+			<sRes id="Voles" type="consumable">0</sRes>
+			<sRes id="Veggies" type="consumable">0</sRes>
+			<sRes id="Oil" type="good">0</sRes>
+			<sRes id="Hard Metals" type="good">0</sRes>
+			<sRes id="Soft Metals" type="good">0</sRes>
+			<sRes id="Chems" type="good">0</sRes>
+			<sRes id="Energy" type="good">0</sRes>
+			<sRes id="Minerals" type="good">0</sRes>
+			<sRes id="Fuel" type="good">0</sRes>
+			<sRes id="Plastic" type="good">0</sRes>
+			<sRes id="Drugs" type="good">0</sRes>
+			<sRes id="Electronics" type="good">0</sRes>
+			<sRes id="Glass" type="good">0</sRes>
+			<sRes id="Parts" type="good">0</sRes>
+			<sRes id="Shells" type="luxury">0</sRes>
+			<sRes id="Coral" type="luxury">0</sRes>
+			<sRes id="Pearls" type="luxury">0</sRes>
+			<sRes id="Spirits" type="luxury">0</sRes>
+			<sRes id="Salvage" type="luxury">0</sRes>
 		</Ship>
 
 		<Generator id="Guzzle Rig" type="Well" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Generator id="Jelly Nets" type="JellyNet" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Generator id="Drillinator" type="Miner" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Generator id="Voltier" type="PowerPlant" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Housing id="Sweat Bunks" pop="50" max="100" cred="100">
-			<hRes id="Water">50</hRes>
+			<hRes id="Water" type="consumable">0</hRes>
+			<hRes id="Fish" type="consumable">0</hRes>
+			<hRes id="Seaweed" type="consumable">0</hRes>
+			<hRes id="Soylent" type="consumable">0</hRes>
+			<hRes id="Decapoda" type="consumable">0</hRes>
+			<hRes id="Jellies" type="consumable">0</hRes>
+			<hRes id="Voles" type="consumable">0</hRes>
+			<hRes id="Veggies" type="consumable">0</hRes>
+			<hRes id="Shells" type="luxury">0</hRes>
+			<hRes id="Coral" type="luxury">0</hRes>
+			<hRes id="Pearls" type="luxury">0</hRes>
+			<hRes id="Spirits" type="luxury">0</hRes>
+			<hRes id="Salvage" type="luxury">0</hRes>
 		</Housing>
 
 	</City>
@@ -184,176 +196,188 @@
 
 		<Description>Default</Description>
 
-		<cRes id="Water" base="10">0</cRes>
-		<cRes id="Fish" base="10">0</cRes>
-		<cRes id="Seaweed" base="10">0</cRes>
-		<cRes id="Soylent" base="5">0</cRes>
-		<cRes id="Decapoda" base="15">0</cRes>
-		<cRes id="Jellies" base="8">0</cRes>
-		<cRes id="Voles" base="20">0</cRes>
-		<cRes id="Veggies" base="10">0</cRes>
-		<cRes id="Oil" base="25">0</cRes>
-		<cRes id="Hard Metals" base="35">0</cRes>
-		<cRes id="Soft Metals" base="10">0</cRes>
-		<cRes id="Chems" base="10">0</cRes>
-		<cRes id="Energy" base="15">0</cRes>
-		<cRes id="Minerals" base="10">0</cRes>
-		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Plastic" base="10">0</cRes>
-		<cRes id="Drugs" base="10">0</cRes>
-		<cRes id="Electronics" base="10">0</cRes>
-		<cRes id="Glass" base="10">0</cRes>
-		<cRes id="Parts" base="55">0</cRes>
-		<cRes id="Shells" base="15">0</cRes>
-		<cRes id="Coral" base="35">0</cRes>
-		<cRes id="Pearls" base="75">0</cRes>
-		<cRes id="Spirits" base="20">0</cRes>
-		<cRes id="Salvage" base="10">0</cRes>
+		<cRes id="Water" type="consumable" base="10">0</cRes>
+		<cRes id="Fish" type="consumable" base="10">0</cRes>
+		<cRes id="Seaweed" type="consumable" base="10">0</cRes>
+		<cRes id="Soylent" type="consumable" base="5">0</cRes>
+		<cRes id="Decapoda" type="consumable" base="15">0</cRes>
+		<cRes id="Jellies" type="consumable" base="8">0</cRes>
+		<cRes id="Voles" type="consumable" base="20">0</cRes>
+		<cRes id="Veggies" type="consumable" base="10">0</cRes>
+		<cRes id="Oil" type="good" base="25">0</cRes>
+		<cRes id="Hard Metals" type="good" base="35">0</cRes>
+		<cRes id="Soft Metals" type="good" base="10">0</cRes>
+		<cRes id="Chems" type="good" base="10">0</cRes>
+		<cRes id="Energy" type="good" base="15">0</cRes>
+		<cRes id="Minerals" type="good" base="10">0</cRes>
+		<cRes id="Fuel" type="good" base="15">0</cRes>
+		<cRes id="Plastic" type="good" base="10">0</cRes>
+		<cRes id="Drugs" type="good" base="10">0</cRes>
+		<cRes id="Electronics" type="good" base="10">0</cRes>
+		<cRes id="Glass" type="good" base="10">0</cRes>
+		<cRes id="Parts" type="good" base="55">0</cRes>
+		<cRes id="Shells" type="luxury" base="15">0</cRes>
+		<cRes id="Coral" type="luxury" base="35">0</cRes>
+		<cRes id="Pearls" type="luxury" base="75">0</cRes>
+		<cRes id="Spirits" type="luxury" base="20">0</cRes>
+		<cRes id="Salvage" type="luxury" base="10">0</cRes>
 
 		<Ship id="Iron Pearl" x="100" y="400" speed="10" dock="Palamine" cred="100" pop="10" max="20">
 
 			<Description>Default</Description>
 
-			<sRes id="Water">0</sRes>
-			<sRes id="Fish">0</sRes>
-			<sRes id="Seaweed">0</sRes>
-			<sRes id="Soylent">0</sRes>
-			<sRes id="Decapoda">0</sRes>
-			<sRes id="Jellies">0</sRes>
-			<sRes id="Voles">0</sRes>
-			<sRes id="Veggies">0</sRes>
-			<sRes id="Oil">0</sRes>
-			<sRes id="Hard Metals">0</sRes>
-			<sRes id="Soft Metals">0</sRes>
-			<sRes id="Chems">0</sRes>
-			<sRes id="Energy">0</sRes>
-			<sRes id="Minerals">0</sRes>
-			<sRes id="Fuel">0</sRes>
-			<sRes id="Plastic">0</sRes>
-			<sRes id="Drugs">0</sRes>
-			<sRes id="Electronics">0</sRes>
-			<sRes id="Glass">0</sRes>
-			<sRes id="Parts">0</sRes>
-			<sRes id="Shells">0</sRes>
-			<sRes id="Coral">0</sRes>
-			<sRes id="Pearls">0</sRes>
-			<sRes id="Spirits">0</sRes>
-			<sRes id="Salvage">0</sRes>
+			<sRes id="Water" type="consumable">0</sRes>
+			<sRes id="Fish" type="consumable">0</sRes>
+			<sRes id="Seaweed" type="consumable">0</sRes>
+			<sRes id="Soylent" type="consumable">0</sRes>
+			<sRes id="Decapoda" type="consumable">0</sRes>
+			<sRes id="Jellies" type="consumable">0</sRes>
+			<sRes id="Voles" type="consumable">0</sRes>
+			<sRes id="Veggies" type="consumable">0</sRes>
+			<sRes id="Oil" type="good">0</sRes>
+			<sRes id="Hard Metals" type="good">0</sRes>
+			<sRes id="Soft Metals" type="good">0</sRes>
+			<sRes id="Chems" type="good">0</sRes>
+			<sRes id="Energy" type="good">0</sRes>
+			<sRes id="Minerals" type="good">0</sRes>
+			<sRes id="Fuel" type="good">0</sRes>
+			<sRes id="Plastic" type="good">0</sRes>
+			<sRes id="Drugs" type="good">0</sRes>
+			<sRes id="Electronics" type="good">0</sRes>
+			<sRes id="Glass" type="good">0</sRes>
+			<sRes id="Parts" type="good">0</sRes>
+			<sRes id="Shells" type="luxury">0</sRes>
+			<sRes id="Coral" type="luxury">0</sRes>
+			<sRes id="Pearls" type="luxury">0</sRes>
+			<sRes id="Spirits" type="luxury">0</sRes>
+			<sRes id="Salvage" type="luxury">0</sRes>
 		</Ship>
 
 		<Generator id="Great Barrier" type="Reef" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Generator id="Clam Fields" type="MolluskBed" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Generator id="Reef Skimmer" type="Angler" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Generator id="Trinketeer" type="Collector" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 		<Housing id="Shell Cove" pop="50" max="100" cred="100">
-			<hRes id="Water">50</hRes>
+			<hRes id="Water" type="consumable">0</hRes>
+			<hRes id="Fish" type="consumable">0</hRes>
+			<hRes id="Seaweed" type="consumable">0</hRes>
+			<hRes id="Soylent" type="consumable">0</hRes>
+			<hRes id="Decapoda" type="consumable">0</hRes>
+			<hRes id="Jellies" type="consumable">0</hRes>
+			<hRes id="Voles" type="consumable">0</hRes>
+			<hRes id="Veggies" type="consumable">0</hRes>
+			<hRes id="Shells" type="luxury">0</hRes>
+			<hRes id="Coral" type="luxury">0</hRes>
+			<hRes id="Pearls" type="luxury">0</hRes>
+			<hRes id="Spirits" type="luxury">0</hRes>
+			<hRes id="Salvage" type="luxury">0</hRes>
 		</Housing>
 
 	</City>
@@ -362,177 +386,189 @@
 
 		<Description>Build on a tall plataue close to the water's surface, This is a lush green farm land full of fish and greenery.</Description>
 
-		<cRes id="Water" base="10">0</cRes>
-		<cRes id="Fish" base="10">0</cRes>
-		<cRes id="Seaweed" base="10">0</cRes>
-		<cRes id="Soylent" base="5">0</cRes>
-		<cRes id="Decapoda" base="15">0</cRes>
-		<cRes id="Jellies" base="8">0</cRes>
-		<cRes id="Voles" base="20">0</cRes>
-		<cRes id="Veggies" base="10">0</cRes>
-		<cRes id="Oil" base="25">0</cRes>
-		<cRes id="Hard Metals" base="35">0</cRes>
-		<cRes id="Soft Metals" base="10">0</cRes>
-		<cRes id="Chems" base="10">0</cRes>
-		<cRes id="Energy" base="15">0</cRes>
-		<cRes id="Minerals" base="10">0</cRes>
-		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Plastic" base="10">0</cRes>
-		<cRes id="Drugs" base="10">0</cRes>
-		<cRes id="Electronics" base="10">0</cRes>
-		<cRes id="Glass" base="10">0</cRes>
-		<cRes id="Parts" base="55">0</cRes>
-		<cRes id="Shells" base="15">0</cRes>
-		<cRes id="Coral" base="35">0</cRes>
-		<cRes id="Pearls" base="75">0</cRes>
-		<cRes id="Spirits" base="20">0</cRes>
-		<cRes id="Salvage" base="10">0</cRes>
+		<cRes id="Water" type="consumable" base="10">0</cRes>
+		<cRes id="Fish" type="consumable" base="10">0</cRes>
+		<cRes id="Seaweed" type="consumable" base="10">0</cRes>
+		<cRes id="Soylent" type="consumable" base="5">0</cRes>
+		<cRes id="Decapoda" type="consumable" base="15">0</cRes>
+		<cRes id="Jellies" type="consumable" base="8">0</cRes>
+		<cRes id="Voles" type="consumable" base="20">0</cRes>
+		<cRes id="Veggies" type="consumable" base="10">0</cRes>
+		<cRes id="Oil" type="good" base="25">0</cRes>
+		<cRes id="Hard Metals" type="good" base="35">0</cRes>
+		<cRes id="Soft Metals" type="good" base="10">0</cRes>
+		<cRes id="Chems" type="good" base="10">0</cRes>
+		<cRes id="Energy" type="good" base="15">0</cRes>
+		<cRes id="Minerals" type="good" base="10">0</cRes>
+		<cRes id="Fuel" type="good" base="15">0</cRes>
+		<cRes id="Plastic" type="good" base="10">0</cRes>
+		<cRes id="Drugs" type="good" base="10">0</cRes>
+		<cRes id="Electronics" type="good" base="10">0</cRes>
+		<cRes id="Glass" type="good" base="10">0</cRes>
+		<cRes id="Parts" type="good" base="55">0</cRes>
+		<cRes id="Shells" type="luxury" base="15">0</cRes>
+		<cRes id="Coral" type="luxury" base="35">0</cRes>
+		<cRes id="Pearls" type="luxury" base="75">0</cRes>
+		<cRes id="Spirits" type="luxury" base="20">0</cRes>
+		<cRes id="Salvage" type="luxury" base="10">0</cRes>
 
 		<Ship id="Farm Buggy" x="1200" y="300" speed="5" dock="Flat Sands Farm" cred="100" pop="10" max="20">
 
 			<Description>It doesn't move too fast. I's not very sleek or eligent. But starving men say its the most beaufitul thing they've ever seen.</Description>
 
-			<sRes id="Water">0</sRes>
-			<sRes id="Fish">0</sRes>
-			<sRes id="Seaweed">0</sRes>
-			<sRes id="Soylent">0</sRes>
-			<sRes id="Decapoda">0</sRes>
-			<sRes id="Jellies">0</sRes>
-			<sRes id="Voles">0</sRes>
-			<sRes id="Veggies">0</sRes>
-			<sRes id="Oil">0</sRes>
-			<sRes id="Hard Metals">0</sRes>
-			<sRes id="Soft Metals">0</sRes>
-			<sRes id="Chems">0</sRes>
-			<sRes id="Energy">0</sRes>
-			<sRes id="Minerals">0</sRes>
-			<sRes id="Fuel">0</sRes>
-			<sRes id="Plastic">0</sRes>
-			<sRes id="Drugs">0</sRes>
-			<sRes id="Electronics">0</sRes>
-			<sRes id="Glass">0</sRes>
-			<sRes id="Parts">0</sRes>
-			<sRes id="Shells">0</sRes>
-			<sRes id="Coral">0</sRes>
-			<sRes id="Pearls">0</sRes>
-			<sRes id="Spirits">0</sRes>
-			<sRes id="Salvage">0</sRes>
+			<sRes id="Water" type="consumable">0</sRes>
+			<sRes id="Fish" type="consumable">0</sRes>
+			<sRes id="Seaweed" type="consumable">0</sRes>
+			<sRes id="Soylent" type="consumable">0</sRes>
+			<sRes id="Decapoda" type="consumable">0</sRes>
+			<sRes id="Jellies" type="consumable">0</sRes>
+			<sRes id="Voles" type="consumable">0</sRes>
+			<sRes id="Veggies" type="consumable">0</sRes>
+			<sRes id="Oil" type="good">0</sRes>
+			<sRes id="Hard Metals" type="good">0</sRes>
+			<sRes id="Soft Metals" type="good">0</sRes>
+			<sRes id="Chems" type="good">0</sRes>
+			<sRes id="Energy" type="good">0</sRes>
+			<sRes id="Minerals" type="good">0</sRes>
+			<sRes id="Fuel" type="good">0</sRes>
+			<sRes id="Plastic" type="good">0</sRes>
+			<sRes id="Drugs" type="good">0</sRes>
+			<sRes id="Electronics" type="good">0</sRes>
+			<sRes id="Glass" type="good">0</sRes>
+			<sRes id="Parts" type="good">0</sRes>
+			<sRes id="Shells" type="luxury">0</sRes>
+			<sRes id="Coral" type="luxury">0</sRes>
+			<sRes id="Pearls" type="luxury">0</sRes>
+			<sRes id="Spirits" type="luxury">0</sRes>
+			<sRes id="Salvage" type="luxury">0</sRes>
 		</Ship>
 
 		<Generator id="Bundler" type="Harvester" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Generator id="Clap Trapper" type="Crabber" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Generator id="Scoop Netter" type="Angler" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Generator id="Rain Buckets" type="RainBuckets" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Housing id="Farm House" pop="50" max="100" cred="100">
-			<hRes id="Water">50</hRes>
+			<hRes id="Water" type="consumable">0</hRes>
+			<hRes id="Fish" type="consumable">0</hRes>
+			<hRes id="Seaweed" type="consumable">0</hRes>
+			<hRes id="Soylent" type="consumable">0</hRes>
+			<hRes id="Decapoda" type="consumable">0</hRes>
+			<hRes id="Jellies" type="consumable">0</hRes>
+			<hRes id="Voles" type="consumable">0</hRes>
+			<hRes id="Veggies" type="consumable">0</hRes>
+			<hRes id="Shells" type="luxury">0</hRes>
+			<hRes id="Coral" type="luxury">0</hRes>
+			<hRes id="Pearls" type="luxury">0</hRes>
+			<hRes id="Spirits" type="luxury">0</hRes>
+			<hRes id="Salvage" type="luxury">0</hRes>
 		</Housing>
 
 	</City>
@@ -541,205 +577,217 @@
 
 		<Description>A city held together with spit and duct tape. Its a miracle it's water proof but damn those junker's can build.</Description>
 
-		<cRes id="Water" base="10">0</cRes>
-		<cRes id="Fish" base="10">0</cRes>
-		<cRes id="Seaweed" base="10">0</cRes>
-		<cRes id="Soylent" base="5">0</cRes>
-		<cRes id="Decapoda" base="15">0</cRes>
-		<cRes id="Jellies" base="8">0</cRes>
-		<cRes id="Voles" base="20">0</cRes>
-		<cRes id="Veggies" base="10">0</cRes>
-		<cRes id="Oil" base="25">0</cRes>
-		<cRes id="Hard Metals" base="35">0</cRes>
-		<cRes id="Soft Metals" base="10">0</cRes>
-		<cRes id="Chems" base="10">0</cRes>
-		<cRes id="Energy" base="15">0</cRes>
-		<cRes id="Minerals" base="10">0</cRes>
-		<cRes id="Fuel" base="15">0</cRes>
-		<cRes id="Plastic" base="10">0</cRes>
-		<cRes id="Drugs" base="10">0</cRes>
-		<cRes id="Electronics" base="10">0</cRes>
-		<cRes id="Glass" base="10">0</cRes>
-		<cRes id="Parts" base="55">0</cRes>
-		<cRes id="Shells" base="15">0</cRes>
-		<cRes id="Coral" base="35">0</cRes>
-		<cRes id="Pearls" base="75">0</cRes>
-		<cRes id="Spirits" base="20">0</cRes>
-		<cRes id="Salvage" base="10">0</cRes>
+		<cRes id="Water" type="consumable" base="10">0</cRes>
+		<cRes id="Fish" type="consumable" base="10">0</cRes>
+		<cRes id="Seaweed" type="consumable" base="10">0</cRes>
+		<cRes id="Soylent" type="consumable" base="5">0</cRes>
+		<cRes id="Decapoda" type="consumable" base="15">0</cRes>
+		<cRes id="Jellies" type="consumable" base="8">0</cRes>
+		<cRes id="Voles" type="consumable" base="20">0</cRes>
+		<cRes id="Veggies" type="consumable" base="10">0</cRes>
+		<cRes id="Oil" type="good" base="25">0</cRes>
+		<cRes id="Hard Metals" type="good" base="35">0</cRes>
+		<cRes id="Soft Metals" type="good" base="10">0</cRes>
+		<cRes id="Chems" type="good" base="10">0</cRes>
+		<cRes id="Energy" type="good" base="15">0</cRes>
+		<cRes id="Minerals" type="good" base="10">0</cRes>
+		<cRes id="Fuel" type="good" base="15">0</cRes>
+		<cRes id="Plastic" type="good" base="10">0</cRes>
+		<cRes id="Drugs" type="good" base="10">0</cRes>
+		<cRes id="Electronics" type="good" base="10">0</cRes>
+		<cRes id="Glass" type="good" base="10">0</cRes>
+		<cRes id="Parts" type="good" base="55">0</cRes>
+		<cRes id="Shells" type="luxury" base="15">0</cRes>
+		<cRes id="Coral" type="luxury" base="35">0</cRes>
+		<cRes id="Pearls" type="luxury" base="75">0</cRes>
+		<cRes id="Spirits" type="luxury" base="20">0</cRes>
+		<cRes id="Salvage" type="luxury" base="10">0</cRes>
 
 		<Ship id="Wave Breaker" x="650" y="850" speed="5" dock="Junk Town" cred="100" pop="10" max="20">
 
 			<Description>The flag ship of Junk Town.</Description>
 
-			<sRes id="Water">0</sRes>
-			<sRes id="Fish">0</sRes>
-			<sRes id="Seaweed">0</sRes>
-			<sRes id="Soylent">0</sRes>
-			<sRes id="Decapoda">0</sRes>
-			<sRes id="Jellies">0</sRes>
-			<sRes id="Voles">0</sRes>
-			<sRes id="Veggies">0</sRes>
-			<sRes id="Oil">0</sRes>
-			<sRes id="Hard Metals">0</sRes>
-			<sRes id="Soft Metals">0</sRes>
-			<sRes id="Chems">0</sRes>
-			<sRes id="Energy">0</sRes>
-			<sRes id="Minerals">0</sRes>
-			<sRes id="Fuel">0</sRes>
-			<sRes id="Plastic">0</sRes>
-			<sRes id="Drugs">0</sRes>
-			<sRes id="Electronics">0</sRes>
-			<sRes id="Glass">0</sRes>
-			<sRes id="Parts">0</sRes>
-			<sRes id="Shells">0</sRes>
-			<sRes id="Coral">0</sRes>
-			<sRes id="Pearls">0</sRes>
-			<sRes id="Spirits">0</sRes>
-			<sRes id="Salvage">0</sRes>
+			<sRes id="Water" type="consumable">0</sRes>
+			<sRes id="Fish" type="consumable">0</sRes>
+			<sRes id="Seaweed" type="consumable">0</sRes>
+			<sRes id="Soylent" type="consumable">0</sRes>
+			<sRes id="Decapoda" type="consumable">0</sRes>
+			<sRes id="Jellies" type="consumable">0</sRes>
+			<sRes id="Voles" type="consumable">0</sRes>
+			<sRes id="Veggies" type="consumable">0</sRes>
+			<sRes id="Oil" type="good">0</sRes>
+			<sRes id="Hard Metals" type="good">0</sRes>
+			<sRes id="Soft Metals" type="good">0</sRes>
+			<sRes id="Chems" type="good">0</sRes>
+			<sRes id="Energy" type="good">0</sRes>
+			<sRes id="Minerals" type="good">0</sRes>
+			<sRes id="Fuel" type="good">0</sRes>
+			<sRes id="Plastic" type="good">0</sRes>
+			<sRes id="Drugs" type="good">0</sRes>
+			<sRes id="Electronics" type="good">0</sRes>
+			<sRes id="Glass" type="good">0</sRes>
+			<sRes id="Parts" type="good">0</sRes>
+			<sRes id="Shells" type="luxury">0</sRes>
+			<sRes id="Coral" type="luxury">0</sRes>
+			<sRes id="Pearls" type="luxury">0</sRes>
+			<sRes id="Spirits" type="luxury">0</sRes>
+			<sRes id="Salvage" type="luxury">0</sRes>
 		</Ship>
 
 		<Generator id="Go Juice Depot" type="Refinery" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Generator id="Welding Yard" type="Yard" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Generator id="Chum Hall" type="SoylentPress" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Generator id="Vole Pits" type="VolePit" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Generator id="Blue Saloon" type="Distillery" pop="5" cred="500">
-			<gRes id="Water">0</gRes>
-			<gRes id="Fish">0</gRes>
-			<gRes id="Seaweed">0</gRes>
-			<gRes id="Soylent">0</gRes>
-			<gRes id="Decapoda">0</gRes>
-			<gRes id="Jellies">0</gRes>
-			<gRes id="Voles">0</gRes>
-			<gRes id="Veggies">0</gRes>
-			<gRes id="Oil">0</gRes>
-			<gRes id="Hard Metals">0</gRes>
-			<gRes id="Soft Metals">0</gRes>
-			<gRes id="Chems">0</gRes>
-			<gRes id="Energy">0</gRes>
-			<gRes id="Minerals">0</gRes>
-			<gRes id="Fuel">0</gRes>
-			<gRes id="Plastic">0</gRes>
-			<gRes id="Drugs">0</gRes>
-			<gRes id="Electronics">0</gRes>
-			<gRes id="Glass">0</gRes>
-			<gRes id="Parts">0</gRes>
-			<gRes id="Shells">0</gRes>
-			<gRes id="Coral">0</gRes>
-			<gRes id="Pearls">0</gRes>
-			<gRes id="Spirits">0</gRes>
-			<gRes id="Salvage">0</gRes>
+			<gRes id="Water" type="consumable">0</gRes>
+			<gRes id="Fish" type="consumable">0</gRes>
+			<gRes id="Seaweed" type="consumable">0</gRes>
+			<gRes id="Soylent" type="consumable">0</gRes>
+			<gRes id="Decapoda" type="consumable">0</gRes>
+			<gRes id="Jellies" type="consumable">0</gRes>
+			<gRes id="Voles" type="consumable">0</gRes>
+			<gRes id="Veggies" type="consumable">0</gRes>
+			<gRes id="Oil" type="good">0</gRes>
+			<gRes id="Hard Metals" type="good">0</gRes>
+			<gRes id="Soft Metals" type="good">0</gRes>
+			<gRes id="Chems" type="good">0</gRes>
+			<gRes id="Energy" type="good">0</gRes>
+			<gRes id="Minerals" type="good">0</gRes>
+			<gRes id="Fuel" type="good">0</gRes>
+			<gRes id="Plastic" type="good">0</gRes>
+			<gRes id="Drugs" type="good">0</gRes>
+			<gRes id="Electronics" type="good">0</gRes>
+			<gRes id="Glass" type="good">0</gRes>
+			<gRes id="Parts" type="good">0</gRes>
+			<gRes id="Shells" type="luxury">0</gRes>
+			<gRes id="Coral" type="luxury">0</gRes>
+			<gRes id="Pearls" type="luxury">0</gRes>
+			<gRes id="Spirits" type="luxury">0</gRes>
+			<gRes id="Salvage" type="luxury">0</gRes>
 		</Generator>
 
 		<Housing id="Slum Town" pop="50" max="100" cred="100">
-			<hRes id="Water">50</hRes>
+			<hRes id="Water" type="consumable">0</hRes>
+			<hRes id="Fish" type="consumable">0</hRes>
+			<hRes id="Seaweed" type="consumable">0</hRes>
+			<hRes id="Soylent" type="consumable">0</hRes>
+			<hRes id="Decapoda" type="consumable">0</hRes>
+			<hRes id="Jellies" type="consumable">0</hRes>
+			<hRes id="Voles" type="consumable">0</hRes>
+			<hRes id="Veggies" type="consumable">0</hRes>
+			<hRes id="Shells" type="luxury">0</hRes>
+			<hRes id="Coral" type="luxury">0</hRes>
+			<hRes id="Pearls" type="luxury">0</hRes>
+			<hRes id="Spirits" type="luxury">0</hRes>
+			<hRes id="Salvage" type="luxury">0</hRes>
 		</Housing>
 	</City>
 </class>

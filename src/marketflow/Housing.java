@@ -1,5 +1,6 @@
 package marketflow;
 
+import java.awt.*;
 import java.util.Map;
 
 public class Housing extends Entity
@@ -22,20 +23,32 @@ public class Housing extends Entity
 		return home;
 	}
 
-	public void update(int count, int tickCount)
+	public void update(int count)
 	{
-		super.update(count, tickCount);
-		
-		float multiplier = (float)Population/(float)PopulationMax;
-		if(tickCount%(int)(10/multiplier)==0)
-		{//as population goes up this gets faster. slower as it declines
 
+		float multiplier = (float)Population/(float)PopulationMax;
+
+		if(count%(int)(100/multiplier)==0)
+		{//as population goes up this gets faster. slower as it declines
+			if(ID.equals("Shell Cove")) {
+
+				System.out.println(((int)(100/multiplier)) + " - " + Population());
+			}
+
+			for(Stock s : stockRef.values())
+			{
+				if(s.Type().equals("consumable"))
+				{
+					//System.out.println(s.Name);
+				}
+			}
 		}
-		
-		if(tickCount%100==0)
+
+		if(count%100==0)
 		{//collect rents
-			//System.out.println(ID+": "+Math.round(taxRate*Population));
 			incCredit(Math.round(taxRate*Population));
 		}
 	}
+
+	public void render(Graphics g){}
 }

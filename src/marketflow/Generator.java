@@ -88,10 +88,8 @@ public class Generator extends Entity
 	
 	public int Price(){return price;}
 	
-	public void update(int count, int tickCount)
+	public void update(int count)
 	{
-		super.update(count, tickCount);
-
 		float amt = (float)Resource(Product);
 		float ttl = (float)amt;
 		for(int i = 0; i < home.generators.size(); i++)
@@ -144,7 +142,7 @@ public class Generator extends Entity
 				break;
 			}
 			float multiplier = (float)Population/(float)PopulationMax;
-			if(tickCount%(int)(Time/multiplier)==0)
+			if(count%(int)(Time/multiplier)==0)
 			{//for every time of production
 				if(price<home.Price(Product))
 				{//if the price is right... start selling
@@ -183,7 +181,7 @@ public class Generator extends Entity
 			break;
 		}
 		
-		if(tickCount%100==0)
+		if(count%100==0)
 		{//every once and a while
 			if(Population<PopulationMax)
 			{//hire a new guy

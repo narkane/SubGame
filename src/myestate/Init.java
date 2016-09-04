@@ -13,7 +13,7 @@ public class Init
 		xmlh.processMyEstate();
 	}
 
-	public void update(int count, int tickCount)
+	public void update(int count)
 	{
 
 	}
@@ -21,5 +21,8 @@ public class Init
 	public void render(Graphics g)
 	{
 		g.drawString("MyEstate", 100, 10);
+	}
+
+	public void tick(int count) {
 	}
 }

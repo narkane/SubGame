@@ -66,9 +66,8 @@ public class Ship extends Entity
 	ArrayList<Transaction> transactions = new ArrayList<>();
 	int maxTransactions=100;
 
-	public void update(int count, int tickCount)
+	public void update(int count)
 	{
-		super.update(count, tickCount);
 		int mostProfit = 0;
 		switch(state)
 		{
@@ -168,7 +167,7 @@ public class Ship extends Entity
 
 			if(Buy(dock, Cargo, dock.Price(Cargo), 1))
 			{
-				transactions.add(new Transaction(tickCount, Cargo, dock.Price(Cargo)));
+				transactions.add(new Transaction(count, Cargo, dock.Price(Cargo)));
 			}
 			else
 			{

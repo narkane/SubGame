@@ -21,7 +21,6 @@ public class Game extends Canvas implements Runnable
 	public static double SCALE = 1.0;		//zoom value
 	public static boolean running = false;	//game running
 	public Thread gameThread;
-	static final int tickLength = 2;
 	
 	private BufferedImage spriteSheet;		
 	public static enum State
@@ -65,8 +64,6 @@ public class Game extends Canvas implements Runnable
 	public static void state(State s)
 	{
 		state = s;
-		count = count%tickLength;
-		tickCount = 0;
 		keymap.mapKeys(s);
 	}
 	
@@ -101,47 +98,69 @@ public class Game extends Canvas implements Runnable
 		final double amountOfTicks = 100D;
 		double ns = 1000000000 / amountOfTicks;
 		double delta = 0;
+		double second = 0;
 		
 		while(running)
 		{
 			long now = System.nanoTime();
 			delta += (now-lastTime)/ns;
+			second +=(now-lastTime)/ns;
 			lastTime = now;
 			if(delta >= 1)
 			{
-				tick();
+				update();
 				delta--;
+			}
+			if(second >= amountOfTicks)
+			{
+				tick();
+				second-=amountOfTicks;
 			}
 			render();
 		}
 		stop();
 	}
 	
-	private static int count;
-	private static int tickCount = 0;
-	public void tick()
-	{
+	private int count;
+	public void update()
+	{//this runs 100 times a second
 		count++;
-		if(count%tickLength==0)
+		switch(state)
 		{
-			switch(state)
-			{
+		case UI:
+			ui.update(count);
+			break;
+		case MARKETFLOW:
+			mf.update(count);
+			break;
+		case SUBBATTLE:
+			sb.update(count);
+			break;
+		case MYESTATE:
+			me.update(count);
+			break;
+		}
+	}
+
+	private int second;
+	public void tick()
+	{//this runs once a second
+		second++;
+		switch(state)
+		{
 			case UI:
-				ui.update(count, tickCount);
+				ui.tick(second);
 				break;
 			case MARKETFLOW:
-				mf.update(count, tickCount);
+				mf.tick(second);
 				break;
 			case SUBBATTLE:
-				sb.update(count, tickCount);
+				sb.tick(second);
 				break;
 			case MYESTATE:
-				me.update(count, tickCount);
+				me.tick(second);
 				break;
-			}
-			tickCount++;
-			count=0;
-		}	
+		}
 	}
 	
 	public void render()
@@ -177,7 +196,7 @@ public class Game extends Canvas implements Runnable
 		}
 		
 		g.setColor(Color.ORANGE);
-		g.drawString("Time: "+String.format("%02d", count)+" - "+tickCount, 10, 10);
+		g.drawString("Time: "+String.format("%02d", count), 10, 10);
 		
 		//RENDER END
 		
